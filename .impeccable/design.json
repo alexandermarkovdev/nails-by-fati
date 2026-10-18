@@ -1,29 +1,83 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-18T14:48:10Z",
+  "generatedAt": "2026-10-18T14:58:24.2517949Z",
   "title": "Design System: Nails by Fati Balakchi",
   "extensions": {
     "typographyMeta": {
-      "display": {"displayName": "Burgundy serif display", "purpose": "Main Bulgarian hero heading; italic accent uses rose."},
-      "body": {"displayName": "Arial supporting text", "purpose": "Introduction; responsive sizes compact with viewport."}
+      "display": {
+        "displayName": "Burgundy serif display",
+        "purpose": "Main Bulgarian hero heading; italic accent uses rose."
+      },
+      "body": {
+        "displayName": "Arial supporting text",
+        "purpose": "Introduction; responsive sizes compact with viewport."
+      }
     },
     "shadows": [],
     "motion": [],
     "breakpoints": [
-      {"name": "wide", "value": "min-width:1750px"},
-      {"name": "compact-desktop", "value": "max-width:1250px"},
-      {"name": "navigation-grid", "value": "max-width:1000px"},
-      {"name": "mobile", "value": "max-width:650px"},
-      {"name": "short-desktop", "value": "(max-height:720px) and (min-width:651px)"},
-      {"name": "short-mobile", "value": "(max-height:700px) and (max-width:650px)"},
-      {"name": "very-short", "value": "max-height:480px"}
+      {
+        "name": "wide",
+        "value": "min-width:1750px"
+      },
+      {
+        "name": "compact-desktop",
+        "value": "max-width:1250px"
+      },
+      {
+        "name": "navigation-grid",
+        "value": "max-width:1000px"
+      },
+      {
+        "name": "mobile",
+        "value": "max-width:650px"
+      },
+      {
+        "name": "short-desktop",
+        "value": "(max-height:720px) and (min-width:651px)"
+      },
+      {
+        "name": "short-mobile",
+        "value": "(max-height:700px) and (max-width:650px)"
+      },
+      {
+        "name": "very-short",
+        "value": "max-height:480px"
+      }
     ],
     "layering": {
       "desktopVeil": "linear-gradient(90deg,rgba(251,242,243,.35),rgba(251,242,243,.16) 35%,transparent 57%)",
-      "mobileVeil": "linear-gradient(180deg,rgba(251,242,243,.96),rgba(251,242,243,.94) 27%,rgba(251,242,243,.83) 43%,rgba(251,242,243,.04) 70%)",
-      "footerSurface": "rgba(251,242,243,.94)"
+      "mobileVeil": "linear-gradient(180deg,rgba(251,242,243,.96),rgba(251,242,243,.94) 27%,rgba(251,242,243,.83) 43%,rgba(251,242,243,.04) 70%)"
     },
-    "source": "dist/index.html; extracted including final text-size overrides"
+    "source": "dist/index.html; extracted including final text-size overrides",
+    "alternatives": [
+      {
+        "path": "dist/variant-1/",
+        "description": "Soft rose fullbleed image and pill CTA"
+      },
+      {
+        "path": "dist/variant-2/",
+        "description": "Warm ivory split layout and framed image"
+      },
+      {
+        "path": "dist/variant-3/",
+        "description": "Deep plum split layout and pink CTA"
+      },
+      {
+        "path": "dist/variant-4/",
+        "description": "Editorial centered header and two-column hero above panoramic photo"
+      }
+    ],
+    "comparison": "dist/variants/",
+    "authority": "dist/index.html remains primary; alternatives are optional static explorations.",
+    "review": {
+      "viewports": [
+        "1280x720",
+        "390x844"
+      ],
+      "disposition": "ship",
+      "source": "Parent agent visual review and independent reviewer"
+    }
   },
   "components": [
     {
@@ -52,9 +106,24 @@
   ],
   "narrative": {
     "overview": "Supplied pink manicure photography spans a fixed viewport. Burgundy Georgia headings and Arial supporting text sit on a translucent pale surface. Bulgarian copy and disabled controls form the current static presentation.",
-    "keyCharacteristics": ["Pink manicure photograph", "Burgundy Georgia headline", "Arial supporting copy", "Three-column summary footer", "Fixed viewport and static controls"],
+    "keyCharacteristics": [
+      "Pink manicure photograph",
+      "Burgundy Georgia headline",
+      "Arial supporting copy",
+      "Location and brand footer metadata without divider",
+      "Fixed viewport and static controls"
+    ],
     "rules": [],
-    "dos": ["Retain the supplied image and pink brand.", "Preserve disabled controls and the fixed viewport.", "Account for final CSS text-size overrides."],
-    "donts": ["Do not add scrolling or interaction to the scoped artifact.", "Do not invent hover or focus states for disabled controls.", "Do not describe the mobile footer as stacked; it remains three columns."]
+    "dos": [
+      "Retain the supplied image and pink brand.",
+      "Preserve disabled controls and the fixed viewport.",
+      "Account for final CSS text-size overrides."
+    ],
+    "donts": [
+      "Do not add scrolling or interaction to the scoped artifact.",
+      "Do not invent hover or focus states for disabled controls.",
+      "Do not restore the removed service summary bar or footer divider without a new request.",
+      "Do not treat optional static variants as the primary design authority."
+    ]
   }
 }
