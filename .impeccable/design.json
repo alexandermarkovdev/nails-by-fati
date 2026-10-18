@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-18T15:43:01.0347201Z",
+  "generatedAt": "2026-10-18T15:55:05.9619734Z",
   "title": "Design System: Nails by Fati Balakchi",
   "extensions": {
     "typographyMeta": {
@@ -13,8 +13,20 @@
         "purpose": "Introduction; responsive sizes compact with viewport."
       }
     },
-    "shadows": [],
-    "motion": [],
+    "shadows": [
+      {
+        "name": "mobile-menu",
+        "value": "0 15px 25px #4928330d",
+        "purpose": "Shared mobile navigation panel"
+      }
+    ],
+    "motion": [
+      {
+        "name": "inner-button",
+        "value": "background .18s,color .18s",
+        "purpose": "Inner action hover; removed by prefers-reduced-motion"
+      }
+    ],
     "breakpoints": [
       {
         "name": "wide",
@@ -43,6 +55,14 @@
       {
         "name": "very-short",
         "value": "max-height:480px"
+      },
+      {
+        "name": "inner-mobile",
+        "value": "max-width:700px"
+      },
+      {
+        "name": "shared-navigation-collapse",
+        "value": "max-width:1050px"
       }
     ],
     "layering": {
@@ -69,7 +89,7 @@
       }
     ],
     "comparison": "dist/variants/",
-    "authority": "dist/index.html matches selected dist/hero-2/ Elegant Service List with only production title changed. Compact Porcelain header remains selected. Hero selection complete.",
+    "authority": "Approved Elegant Service List home and compact Porcelain header preserved, extended with working navigation and booking. Seven inner routes and three articles share dist/site.css and dist/site.js.",
     "review": {
       "disposition": "ship",
       "source": "Prior Hero 2 visual review applies to unchanged hero promoted to main; production title only changed."
@@ -225,56 +245,96 @@
           "description": "Revised headline, chips, and details"
         }
       ]
+    },
+    "multipage": {
+      "styles": "dist/site.css",
+      "behavior": "dist/site.js",
+      "routes": [
+        "/salon/",
+        "/obucheniya/",
+        "/aerograf/",
+        "/za-nas/",
+        "/galeriya/",
+        "/novini/",
+        "/kontakti/"
+      ],
+      "articles": 3,
+      "layout": "Inner pages scroll naturally beneath sticky 56px header / 50px at max-width 700px. Approved home remains fixed.",
+      "body": "Sofia Sans 17px/1.65 desktop; common mobile paragraphs 16px",
+      "navigation": "Working page links and home service links",
+      "features": [
+        "Working mobile menu",
+        "Gallery filters and lightbox",
+        "Course FAQs",
+        "Contact form preview only; no sending"
+      ],
+      "booking": "https://studio24.bg/m/nails-by-fati-balakchi-s7379",
+      "contactEmail": {
+        "value": "hello@example.com",
+        "status": "User-approved placeholder clearly marked sample"
+      },
+      "photos": {
+        "copies": 20,
+        "destination": "dist/photos/",
+        "originals": "C:\\Users\\Home\\Documents\\Claude\\nails\\images",
+        "originalsUntouched": true,
+        "portrait": "studio05",
+        "studentResults": "Explicitly labelled learning examples"
+      },
+      "sources": [
+        "Official Studio24 listing",
+        "https://airbrush.convertbuilder.com/",
+        "User-supplied Facebook photo URL"
+      ],
+      "contentRule": "No invented dates or prices",
+      "verification": "Final review in progress when documentation updated."
+    },
+    "accessibility": {
+      "focus": "2px solid #8a4058; outline-offset:4px",
+      "reducedMotion": "Transitions removed",
+      "skipLink": "Visible on focus"
     }
   },
   "components": [
     {
-      "name": "Primary action",
+      "name": "Inner-page primary action",
       "kind": "button",
-      "refersTo": "button-primary",
-      "description": "Selected disabled pill appointment action with trailing arrow.",
-      "html": "<button class=\"ds-primary\" disabled>Запази час<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-5-5 5 5-5 5\"/></svg></button>",
-      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:47px;padding:0 21px;border:1px solid var(--rose,#8a4058);font:11px Arial,Helvetica,sans-serif;letter-spacing:.2px;border-radius:24px;background:var(--rose,#8a4058);color:#fff9fa;cursor:default}.ds-primary:disabled{opacity:1;-webkit-text-fill-color:currentColor}.ds-primary svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.3;flex:none}"
+      "description": "Working official booking link with rose hover and visible keyboard focus.",
+      "html": "<a class=\"ds-inner-button\" href=\"https://studio24.bg/m/nails-by-fati-balakchi-s7379\">Запази час</a>",
+      "css": ".ds-inner-button{display:inline-flex;align-items:center;justify-content:center;gap:20px;border:1px solid var(--rose,#8a4058);background:var(--rose,#8a4058);color:#fff8fb;padding:13px 20px;min-height:48px;border-radius:24px;font:14px/1.4 \"Sofia Sans\",Arial,sans-serif;text-decoration:none;cursor:pointer;transition:background .18s,color .18s}.ds-inner-button:hover{background:#703047;color:#fff}.ds-inner-button:focus-visible{outline:2px solid #8a4058;outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-inner-button{transition:none}}"
     },
     {
-      "name": "Secondary action",
+      "name": "Gallery filter",
       "kind": "button",
-      "refersTo": "button-secondary",
-      "description": "Disabled training action on translucent paper.",
-      "html": "<button class=\"ds-secondary\" disabled>Курсове и обучения<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6 18 18 6M6 6h12v12\"/></svg></button>",
-      "css": ".ds-secondary{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:47px;padding:0 21px;border:1px solid var(--rose,#8a4058);font:11px Arial,Helvetica,sans-serif;letter-spacing:.2px;border-radius:24px;background:rgba(251,242,243,.44);color:var(--rose,#8a4058);cursor:default}.ds-secondary:disabled{opacity:1;-webkit-text-fill-color:currentColor}.ds-secondary svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.3;flex:none}"
-    },
-    {
-      "name": "Current navigation item",
-      "kind": "nav",
-      "description": "Current selected compact Porcelain Bar navigation; disabled plain label with active underline.",
-      "html": "<nav aria-label=\"Основна навигация\"><button class=\"ds-nav\" disabled aria-current=\"page\">Начало</button></nav>",
-      "css": ".ds-nav{position:relative;display:inline-flex;align-items:center;padding:9px 0;background:none;border:0;font:12px/1.4 Arial,Helvetica,sans-serif;white-space:nowrap;color:var(--rose,#8a4058);cursor:default}.ds-nav:disabled{opacity:1;-webkit-text-fill-color:currentColor}.ds-nav:after{content:\"\";position:absolute;bottom:0;left:0;right:0;height:1px;background:var(--rose,#8a4058)}"
+      "description": "Interactive pill filter; active state uses rose fill.",
+      "html": "<button class=\"ds-filter\" type=\"button\" aria-pressed=\"true\">Всички</button>",
+      "css": ".ds-filter{border:1px solid #8a4058;background:#8a4058;border-radius:20px;padding:8px 18px;font:14px \"Sofia Sans\",Arial,sans-serif;color:#fff;cursor:pointer}.ds-filter:focus-visible{outline:2px solid #8a4058;outline-offset:4px}"
     }
   ],
   "narrative": {
-    "overview": "Selected Elegant Service List is the primary hero, paired with compact Porcelain Bar header. Self-hosted Cormorant Garamond sets “Три посоки. Един почерк.” and three service-row titles: Салон, Обучения, Аерограф. Supplied manicure image positioning is preserved. Both hero and header selections are complete.",
+    "overview": "Selected Elegant Service List home and compact Porcelain Bar remain the visual authority. Seven inner routes and three articles extend the blush and burgundy system with Cormorant display and Sofia Sans body. Home remains fixed; inner pages scroll naturally. Navigation, service links, booking, gallery, mobile menu, and course FAQs work. The contact form is preview-only.",
     "keyCharacteristics": [
-      "Selected Elegant Service List hero",
-      "Selected compact opaque Porcelain Bar header",
-      "Supplied pink manicure photograph",
-      "Self-hosted Cormorant Garamond headline",
-      "Three disabled service rows with descriptive details",
-      "Pill actions with trailing arrows",
-      "Location and brand metadata without footer divider",
-      "Fixed viewport and disabled controls"
+      "Approved fixed-image Elegant Service List home",
+      "Compact Porcelain Bar header",
+      "Scrolling inner pages",
+      "Cormorant Garamond display and Sofia Sans inner-page body",
+      "Working navigation and official booking links",
+      "Labelled learning-example gallery",
+      "Contact preview without sending"
     ],
     "rules": [],
     "dos": [
-      "Retain the supplied image and pink brand.",
-      "Preserve disabled controls and the fixed viewport.",
-      "Account for final CSS text-size overrides."
+      "Preserve the chosen home composition.",
+      "Allow inner pages to scroll naturally.",
+      "Use exact official Studio24 booking URL.",
+      "Label student-result images as learning examples.",
+      "Mark sample email and form preview clearly."
     ],
     "donts": [
-      "Do not add scrolling or interaction to the scoped artifact.",
-      "Do not invent hover or focus states for disabled controls.",
-      "Do not restore the removed service summary bar or footer divider without a new request.",
-      "Do not treat optional static variants as the primary design authority."
+      "Do not invent dates or prices.",
+      "Do not send contact form data.",
+      "Do not alter original supplied images.",
+      "Do not treat earlier alternatives as current primary authority."
     ]
   }
 }
