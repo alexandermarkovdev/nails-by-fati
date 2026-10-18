@@ -75,6 +75,14 @@ Four optional static alternatives are available at `dist/variant-1/` through `di
 
 The main page was visually reviewed at 1280×720 and 390×844, with an independent reviewer disposition of ship.
 
+Variant 1 is the user's favorite among the optional alternatives. Four further selection options at `dist/details-1/` through `dist/details-4/` preserve its exact background image positioning and veil. Their comparison page is `dist/refinements/`:
+
+- Details 1: menu line icons, a calendar call to action, and service labels.
+- Details 2: boutique monogram, underline, and note.
+- Details 3: gold accent, corner lines, and service chips.
+- Details 4: paired sans and serif headline with a disabled floating gallery toolbar.
+
+These details studies remain optional alternatives for selection. They preserve the favorite's photographic treatment and do not replace the main design authority.
 ## Elevation & Depth
 
 There are no shadows. Depth comes from the photograph and translucent horizontal or vertical veil. The footer metadata has no separate surface or divider.
@@ -96,5 +104,6 @@ Navigation is a row of disabled text buttons, with a thin rose underline on the 
 - Do read the final CSS overrides when checking small text sizes.
 - Don't add scrolling, animations, shadows, or interactive states to this documented artifact.
 - Don't restore the removed service summary bar or footer divider without a new request.
+
 
 

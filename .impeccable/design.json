@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-18T14:58:24.2517949Z",
+  "generatedAt": "2026-10-18T15:10:29.7290202Z",
   "title": "Design System: Nails by Fati Balakchi",
   "extensions": {
     "typographyMeta": {
@@ -77,6 +77,30 @@
       ],
       "disposition": "ship",
       "source": "Parent agent visual review and independent reviewer"
+    },
+    "favoriteAlternative": "dist/variant-1/",
+    "refinements": {
+      "comparison": "dist/refinements/",
+      "backgroundAuthority": "Exact background image positioning and veil of dist/variant-1/",
+      "status": "Optional alternatives for selection; main page remains primary authority.",
+      "alternatives": [
+        {
+          "path": "dist/details-1/",
+          "description": "Menu line icons, calendar CTA, and service labels"
+        },
+        {
+          "path": "dist/details-2/",
+          "description": "Boutique monogram, underline, and note"
+        },
+        {
+          "path": "dist/details-3/",
+          "description": "Gold accent, corner lines, and service chips"
+        },
+        {
+          "path": "dist/details-4/",
+          "description": "Sans and serif headline with disabled floating gallery toolbar"
+        }
+      ]
     }
   },
   "components": [
