@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-18T15:23:46.9810470Z",
+  "generatedAt": "2026-10-18T15:30:01.49672Z",
   "title": "Design System: Nails by Fati Balakchi",
   "extensions": {
     "typographyMeta": {
@@ -69,14 +69,14 @@
       }
     ],
     "comparison": "dist/variants/",
-    "authority": "dist/index.html is an exact copy of user-selected dist/details-1/ Icon Studio. Header replacement selection remains pending.",
+    "authority": "dist/index.html combines selected Icon Studio hero with selected compact clear-header-1 Porcelain Bar. Header selection is complete.",
     "review": {
       "viewports": [
         "1280x720",
         "390x844"
       ],
       "disposition": "ship",
-      "source": "Historical review of earlier primary iteration; not a review of the pending header choice."
+      "source": "Historical review of earlier primary iteration; not a review of the subsequently selected compact Porcelain header."
     },
     "favoriteAlternative": "dist/variant-1/",
     "refinements": {
@@ -104,7 +104,7 @@
     },
     "headerAlternatives": {
       "comparison": "dist/headers/",
-      "selection": "pending",
+      "selection": "Completed in later readable-header round: compact clear-header-1 Porcelain Bar selected; these earlier studies remain alternatives.",
       "scope": "Header only; 112px desktop and 84px mobile row; remainder identical to selected Icon Studio",
       "alternatives": [
         {
@@ -136,9 +136,9 @@
     },
     "readableHeaderAlternatives": {
       "comparison": "dist/clear-headers/",
-      "selection": "pending",
+      "selection": "clear-header-1 Porcelain Bar selected and compacted as small as possible.",
       "reason": "User reports drawing behind navigation makes labels hard to read.",
-      "scope": "Optional header alternatives only; selected primary Icon Studio unchanged.",
+      "scope": "Porcelain Bar promoted to main; Icon Studio hero unchanged; remaining headers preserved as alternatives.",
       "navigation": "Opaque backgrounds; 12px labels at 1280px, 11px at 1250px.",
       "alternatives": [
         {
@@ -162,6 +162,21 @@
           "description": "Solid #784358 background, light text, and ivory active tab"
         }
       ]
+    },
+    "selectedHeader": {
+      "name": "Porcelain Bar",
+      "source": "dist/clear-header-1/",
+      "backgroundToken": "header-porcelain",
+      "desktopHeight": "56px",
+      "mobileHeight": "50px",
+      "under480pxHeight": "46px",
+      "desktopLogo": "24px",
+      "mobileLogo": "23px",
+      "ownerLabel": "8px",
+      "navigationAt1280px": "12px",
+      "navigationAt1250px": "11px",
+      "activeTreatment": "underline",
+      "intent": "User requested selected Porcelain header as small as possible."
     }
   },
   "components": [
@@ -184,19 +199,20 @@
     {
       "name": "Current navigation item",
       "kind": "nav",
-      "description": "Current Icon Studio navigation item with line icon above disabled label; header alternatives await selection.",
-      "html": "<nav aria-label=\"Основна навигация\"><button class=\"ds-nav\" disabled aria-current=\"page\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"m3 10 9-7 9 7v10h-6v-6H9v6H3Z\"/></svg><span>Начало</span></button></nav>",
-      "css": ".ds-nav{position:relative;display:inline-flex;align-items:center;flex-direction:column;gap:9px;padding:9px 0;background:none;border:0;font:10px/1.4 Arial,Helvetica,sans-serif;white-space:nowrap;color:var(--rose,#8a4058);cursor:default}.ds-nav:disabled{opacity:1;-webkit-text-fill-color:currentColor}.ds-nav:after{content:\"\";position:absolute;bottom:0;left:0;right:0;height:1px;background:var(--rose,#8a4058)}.ds-nav svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.25;stroke-linecap:round;stroke-linejoin:round}"
+      "description": "Current selected compact Porcelain Bar navigation; disabled plain label with active underline.",
+      "html": "<nav aria-label=\"Основна навигация\"><button class=\"ds-nav\" disabled aria-current=\"page\">Начало</button></nav>",
+      "css": ".ds-nav{position:relative;display:inline-flex;align-items:center;padding:9px 0;background:none;border:0;font:12px/1.4 Arial,Helvetica,sans-serif;white-space:nowrap;color:var(--rose,#8a4058);cursor:default}.ds-nav:disabled{opacity:1;-webkit-text-fill-color:currentColor}.ds-nav:after{content:\"\";position:absolute;bottom:0;left:0;right:0;height:1px;background:var(--rose,#8a4058)}"
     }
   ],
   "narrative": {
-    "overview": "User-selected Details 1 Icon Studio is the current primary page. Pink manicure photography retains Variant 1 positioning and veil. Burgundy Georgia headings, pill actions, menu icons, a calendar CTA, and inline service labels form the selected static design. Header replacement selection is pending.",
+    "overview": "The primary page combines the selected Icon Studio hero with the selected compact Porcelain Bar header. The opaque porcelain header is 56px desktop, 50px mobile, and 46px below 480px viewport height. Pink manicure photography, burgundy Georgia headings, pill actions, calendar CTA, and inline service labels remain unchanged. Header selection is complete.",
     "keyCharacteristics": [
-      "Selected Icon Studio primary",
+      "Selected Icon Studio hero",
+      "Selected compact opaque Porcelain Bar header",
       "Pink manicure photograph",
       "Burgundy Georgia headline",
       "Pill actions with calendar icon",
-      "Menu line icons and inline service labels",
+      "Inline service labels",
       "Location and brand footer metadata without divider",
       "Fixed viewport and disabled controls"
     ],

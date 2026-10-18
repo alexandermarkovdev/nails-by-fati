@@ -6,6 +6,7 @@ colors:
   muted: "#75515e"
   rose: "#8a4058"
   paper: "#fbf2f3"
+  header-porcelain: "#fffaf8"
   button-text: "#fff9fa"
   navigation-text: "#603b49"
   selection: "#e9becb"
@@ -47,7 +48,7 @@ components:
 
 ## Overview
 
-The user selected Details 1, “Icon Studio,” which is copied exactly to `dist/index.html` and is now the primary design authority. The current page preserves the supplied pink manicure photograph and uses burgundy serif typography for the salon identity. Bulgarian copy sits over the pale left side; the photograph dominates the right side. This is a single-screen static presentation with disabled navigation and calls to action.
+The primary `dist/index.html` combines the selected Icon Studio hero with the selected compact Porcelain Bar header (`clear-header-1`). The user chose Porcelain as small as possible; header selection is complete. The current page preserves the supplied pink manicure photograph and uses burgundy serif typography for the salon identity. Bulgarian copy sits over the pale left side; the photograph dominates the right side. This is a single-screen static presentation with disabled navigation and calls to action.
 
 ## Colors
 
@@ -55,15 +56,15 @@ Rose is the primary accent for italic headline emphasis, the filled action, icon
 
 ## Typography
 
-Georgia supplies the regular hero heading and italic brand wordmark. Arial supplies body text, controls, and service labels. The hero uses balanced wrapping; the introduction has a 390px desktop maximum width. Desktop brand type is 32px, reducing to 29px at 1250px. Navigation labels are 10px, reducing to 9px at 1250px; body buttons are 11px. The owner label is 11px with 2px tracking. At mobile widths the heading is 44px and the introduction is 12px. The footer identity is 10px desktop and 9px mobile. The previous signature is hidden.
+Georgia supplies the regular hero heading and italic brand wordmark. Arial supplies body text, controls, and service labels. The hero uses balanced wrapping; the introduction has a 390px desktop maximum width. The compact header logo is 24px desktop and 23px mobile, with an 8px owner label. Navigation labels are 12px at 1280px and 11px at 1250px; body buttons remain 11px. At mobile widths the heading is 44px and the introduction is 12px. The footer identity is 10px desktop and 9px mobile. The previous signature is hidden.
 
 ## Layout
 
 The page is a 100svh grid with header, flexible main, and footer rows. Both document and body suppress overflow and overscroll. The supplied `dist/nails.png` covers the entire viewport with centered cropping. A horizontal translucent veil protects the left copy. Desktop hero width is 49%, capped at 640px, with vertically centered content; the footer retains only the location/identity metadata, with no horizontal divider or service summary bar.
 
-At 1750px and wider, page insets become 7vw and the hero narrows to 46%. At 1250px and below, the header and supporting type compact. At 1000px and below, navigation becomes a four-column grid. At 650px and below, navigation is replaced by a disabled menu icon, the hero becomes full width (maximum 400px), and content aligns toward the top. The photograph crops at 66% bottom and a vertical veil is much more opaque behind the upper copy. This creates text above the lower photographic area; it is still one background image, not a separate image block. The owner label becomes 10px and the footer line becomes 9px.
+At 1750px and wider, page insets become 7vw and the hero narrows to 46%. At 1250px and below, the header and supporting type compact. At 1000px and below, navigation becomes a four-column grid. At 650px and below, navigation is replaced by a disabled menu icon, the hero becomes full width (maximum 400px), and content aligns toward the top. The photograph crops at 66% bottom and a vertical veil is much more opaque behind the upper copy. This creates text above the lower photographic area; it is still one background image, not a separate image block. The owner label stays 8px and the footer line becomes 9px.
 
-Height-specific compaction remains present. The final Icon Studio overrides are authoritative: the headline is 42px below 650px viewport height, service-label spacing compacts below 700px height, and the signature is hidden. The header reserves 112px desktop and 84px mobile. No scrolling or animated layout is present.
+Height-specific compaction remains present. The final Icon Studio overrides are authoritative: the headline is 42px below 650px viewport height, service-label spacing compacts below 700px height, and the signature is hidden. The selected compact Porcelain header is 56px desktop and 50px mobile, reducing to 46px below 480px viewport height. Its solid porcelain surface protects navigation readability. No scrolling or animated layout is present.
 
 Four optional static alternatives are available at `dist/variant-1/` through `dist/variant-4/`, with a comparison page at `dist/variants/`. They do not replace the main page as the design authority:
 
@@ -90,7 +91,7 @@ Five header-only alternatives are available at `dist/header-1/` through `dist/he
 - Header 4 — Burgundy Band: dark strip.
 - Header 5 — Studio Masthead: centered logo above navigation.
 
-The header selection is pending. None of these alternatives is recorded as the final choice.
+These five earlier header studies remain alternatives. The later Porcelain Bar selection below is authoritative.
 
 A further readable-header round responds to the user's report that the drawing behind navigation made labels hard to read. Four optional alternatives use opaque backgrounds and larger navigation labels (12px at 1280px; 11px at 1250px):
 
@@ -99,7 +100,7 @@ A further readable-header round responds to the user's report that the drawing b
 - `dist/clear-header-3/` — Blush Masthead: solid `#f4e3e8` surface and centered two-row layout.
 - `dist/clear-header-4/` — Rosewood Ribbon: solid `#784358` surface, light text, and ivory active tab.
 
-Compare them at `dist/clear-headers/`. The primary Icon Studio page remains unchanged, and the header selection is still pending. These alternative-only colors do not replace the primary tokens above.
+Compare them at `dist/clear-headers/`. Porcelain Bar (`clear-header-1`) is now the selected primary header, compacted to 56px desktop / 50px mobile / 46px below 480px height. The Icon Studio hero remains unchanged. The other options remain alternatives; their colors do not replace the primary tokens above.
 ## Elevation & Depth
 
 There are no shadows. Depth comes from the photograph and translucent horizontal or vertical veil. The footer metadata has no separate surface or divider.
@@ -112,7 +113,7 @@ The composition uses rectangular regions and a thin header divider. Buttons have
 
 Primary and secondary actions share a rose border, inline arrow, 51px desktop minimum height, and 12px internal gap. The primary action also has a calendar icon. Responsive rules reduce their dimensions. Both are actual disabled buttons; disabled opacity remains 1 and the cursor is default. There are no hover, focus, or active interaction treatments.
 
-Current navigation is a row of disabled buttons with line icons above their labels, with a thin rose underline on the current item. At 1000px and below, icons move beside labels within the four-column navigation grid. At mobile widths the navigation is replaced by a disabled menu. Three inline icon-and-text service labels sit under the hero actions; these are not the removed footer summary bar. The footer contains only the location and brand metadata; its top border is explicitly zero.
+The selected Porcelain Bar navigation uses a compact row on an opaque porcelain surface, with a thin rose underline on the current item. The active navigation item uses an underline. At mobile widths the navigation is replaced by a disabled menu. Three inline icon-and-text service labels sit under the hero actions; these are not the removed footer summary bar. The footer contains only the location and brand metadata; its top border is explicitly zero.
 
 ## Do's and Don'ts
 
@@ -121,6 +122,7 @@ Current navigation is a row of disabled buttons with line icons above their labe
 - Do read the final CSS overrides when checking small text sizes.
 - Don't add scrolling, animations, shadows, or interactive states to this documented artifact.
 - Don't restore the removed service summary bar or footer divider without a new request.
+
 
 
 
