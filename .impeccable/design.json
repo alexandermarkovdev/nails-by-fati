@@ -1,12 +1,12 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-18T15:35:11.2323163Z",
+  "generatedAt": "2026-10-18T15:43:01.0347201Z",
   "title": "Design System: Nails by Fati Balakchi",
   "extensions": {
     "typographyMeta": {
       "display": {
         "displayName": "Burgundy serif display",
-        "purpose": "Main Bulgarian hero heading; italic accent uses rose."
+        "purpose": "Selected primary headline and service-row titles; Cormorant Garamond self-hosted in dist/fonts/."
       },
       "body": {
         "displayName": "Arial supporting text",
@@ -69,14 +69,10 @@
       }
     ],
     "comparison": "dist/variants/",
-    "authority": "dist/index.html combines selected Icon Studio hero with selected compact clear-header-1 Porcelain Bar. Header selection is complete.",
+    "authority": "dist/index.html matches selected dist/hero-2/ Elegant Service List with only production title changed. Compact Porcelain header remains selected. Hero selection complete.",
     "review": {
-      "viewports": [
-        "1280x720",
-        "390x844"
-      ],
       "disposition": "ship",
-      "source": "Historical review of earlier primary iteration; not a review of the subsequently selected compact Porcelain header."
+      "source": "Prior Hero 2 visual review applies to unchanged hero promoted to main; production title only changed."
     },
     "favoriteAlternative": "dist/variant-1/",
     "refinements": {
@@ -180,13 +176,13 @@
     },
     "heroAlternatives": {
       "comparison": "dist/hero-options/",
-      "selection": "pending",
+      "selection": "Hero 2 Elegant Service List selected and promoted to dist/index.html; other hero studies remain alternatives.",
       "selectionDimensions": [
         "font",
         "layout",
         "wording"
       ],
-      "scope": "Optional hero studies; primary compact Porcelain plus Icon Studio remains authoritative. Original image positioning and 56px desktop header unchanged.",
+      "scope": "Primary hero is selected Hero 2; supplied image positioning, self-hosted Cormorant Garamond, and compact Porcelain header preserved.",
       "selfHostedFonts": {
         "directory": "dist/fonts/",
         "families": [
@@ -195,7 +191,7 @@
           "Manrope",
           "Lora"
         ],
-        "scope": "Alternatives only; primary typography unchanged."
+        "scope": "Cormorant Garamond now primary hero font; remaining fonts retained for alternatives."
       },
       "serviceTruth": [
         "Salon: manicure, pedicure, nail art",
@@ -236,9 +232,9 @@
       "name": "Primary action",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Selected pill-shaped disabled appointment action with calendar and arrow.",
-      "html": "<button class=\"ds-primary\" disabled><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M7 2v6m10-6v6M3 11h18m-13 4h3m3 0h3\"/></svg>Запази час<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-5-5 5 5-5 5\"/></svg></button>",
-      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:51px;padding:0 22px;border:1px solid var(--rose,#8a4058);font:11px Arial,Helvetica,sans-serif;letter-spacing:.2px;border-radius:24px;background:var(--rose,#8a4058);color:#fff9fa;cursor:default}.ds-primary:disabled{opacity:1;-webkit-text-fill-color:currentColor}.ds-primary svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.3;flex:none}"
+      "description": "Selected disabled pill appointment action with trailing arrow.",
+      "html": "<button class=\"ds-primary\" disabled>Запази час<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-5-5 5 5-5 5\"/></svg></button>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:47px;padding:0 21px;border:1px solid var(--rose,#8a4058);font:11px Arial,Helvetica,sans-serif;letter-spacing:.2px;border-radius:24px;background:var(--rose,#8a4058);color:#fff9fa;cursor:default}.ds-primary:disabled{opacity:1;-webkit-text-fill-color:currentColor}.ds-primary svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.3;flex:none}"
     },
     {
       "name": "Secondary action",
@@ -246,7 +242,7 @@
       "refersTo": "button-secondary",
       "description": "Disabled training action on translucent paper.",
       "html": "<button class=\"ds-secondary\" disabled>Курсове и обучения<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6 18 18 6M6 6h12v12\"/></svg></button>",
-      "css": ".ds-secondary{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:51px;padding:0 22px;border:1px solid var(--rose,#8a4058);font:11px Arial,Helvetica,sans-serif;letter-spacing:.2px;border-radius:24px;background:rgba(251,242,243,.44);color:var(--rose,#8a4058);cursor:default}.ds-secondary:disabled{opacity:1;-webkit-text-fill-color:currentColor}.ds-secondary svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.3;flex:none}"
+      "css": ".ds-secondary{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:47px;padding:0 21px;border:1px solid var(--rose,#8a4058);font:11px Arial,Helvetica,sans-serif;letter-spacing:.2px;border-radius:24px;background:rgba(251,242,243,.44);color:var(--rose,#8a4058);cursor:default}.ds-secondary:disabled{opacity:1;-webkit-text-fill-color:currentColor}.ds-secondary svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.3;flex:none}"
     },
     {
       "name": "Current navigation item",
@@ -257,15 +253,15 @@
     }
   ],
   "narrative": {
-    "overview": "The primary page combines the selected Icon Studio hero with the selected compact Porcelain Bar header. The opaque porcelain header is 56px desktop, 50px mobile, and 46px below 480px viewport height. Pink manicure photography, burgundy Georgia headings, pill actions, calendar CTA, and inline service labels remain unchanged. Header selection is complete.",
+    "overview": "Selected Elegant Service List is the primary hero, paired with compact Porcelain Bar header. Self-hosted Cormorant Garamond sets “Три посоки. Един почерк.” and three service-row titles: Салон, Обучения, Аерограф. Supplied manicure image positioning is preserved. Both hero and header selections are complete.",
     "keyCharacteristics": [
-      "Selected Icon Studio hero",
+      "Selected Elegant Service List hero",
       "Selected compact opaque Porcelain Bar header",
-      "Pink manicure photograph",
-      "Burgundy Georgia headline",
-      "Pill actions with calendar icon",
-      "Inline service labels",
-      "Location and brand footer metadata without divider",
+      "Supplied pink manicure photograph",
+      "Self-hosted Cormorant Garamond headline",
+      "Three disabled service rows with descriptive details",
+      "Pill actions with trailing arrows",
+      "Location and brand metadata without footer divider",
       "Fixed viewport and disabled controls"
     ],
     "rules": [],
