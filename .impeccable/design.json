@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-18T15:17:27.8597276Z",
+  "generatedAt": "2026-10-18T15:23:46.9810470Z",
   "title": "Design System: Nails by Fati Balakchi",
   "extensions": {
     "typographyMeta": {
@@ -131,6 +131,35 @@
           "path": "dist/header-5/",
           "name": "Studio Masthead",
           "description": "Centered logo above navigation"
+        }
+      ]
+    },
+    "readableHeaderAlternatives": {
+      "comparison": "dist/clear-headers/",
+      "selection": "pending",
+      "reason": "User reports drawing behind navigation makes labels hard to read.",
+      "scope": "Optional header alternatives only; selected primary Icon Studio unchanged.",
+      "navigation": "Opaque backgrounds; 12px labels at 1280px, 11px at 1250px.",
+      "alternatives": [
+        {
+          "path": "dist/clear-header-1/",
+          "name": "Porcelain Bar",
+          "description": "Solid #fffaf8 background with active underline"
+        },
+        {
+          "path": "dist/clear-header-2/",
+          "name": "White Navigation Card",
+          "description": "Opaque #fff background with filled burgundy active tab"
+        },
+        {
+          "path": "dist/clear-header-3/",
+          "name": "Blush Masthead",
+          "description": "Solid #f4e3e8 background and centered two-row layout"
+        },
+        {
+          "path": "dist/clear-header-4/",
+          "name": "Rosewood Ribbon",
+          "description": "Solid #784358 background, light text, and ivory active tab"
         }
       ]
     }

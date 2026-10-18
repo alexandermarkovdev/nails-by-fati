@@ -92,6 +92,14 @@ Five header-only alternatives are available at `dist/header-1/` through `dist/he
 
 The header selection is pending. None of these alternatives is recorded as the final choice.
 
+A further readable-header round responds to the user's report that the drawing behind navigation made labels hard to read. Four optional alternatives use opaque backgrounds and larger navigation labels (12px at 1280px; 11px at 1250px):
+
+- `dist/clear-header-1/` — Porcelain Bar: solid `#fffaf8` surface with active underline.
+- `dist/clear-header-2/` — White Navigation Card: opaque `#fff` surface with a filled burgundy active tab.
+- `dist/clear-header-3/` — Blush Masthead: solid `#f4e3e8` surface and centered two-row layout.
+- `dist/clear-header-4/` — Rosewood Ribbon: solid `#784358` surface, light text, and ivory active tab.
+
+Compare them at `dist/clear-headers/`. The primary Icon Studio page remains unchanged, and the header selection is still pending. These alternative-only colors do not replace the primary tokens above.
 ## Elevation & Depth
 
 There are no shadows. Depth comes from the photograph and translucent horizontal or vertical veil. The footer metadata has no separate surface or divider.
@@ -113,6 +121,7 @@ Current navigation is a row of disabled buttons with line icons above their labe
 - Do read the final CSS overrides when checking small text sizes.
 - Don't add scrolling, animations, shadows, or interactive states to this documented artifact.
 - Don't restore the removed service summary bar or footer divider without a new request.
+
 
 
 
