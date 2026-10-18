@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-18T15:30:01.49672Z",
+  "generatedAt": "2026-10-18T15:35:11.2323163Z",
   "title": "Design System: Nails by Fati Balakchi",
   "extensions": {
     "typographyMeta": {
@@ -177,6 +177,58 @@
       "navigationAt1250px": "11px",
       "activeTreatment": "underline",
       "intent": "User requested selected Porcelain header as small as possible."
+    },
+    "heroAlternatives": {
+      "comparison": "dist/hero-options/",
+      "selection": "pending",
+      "selectionDimensions": [
+        "font",
+        "layout",
+        "wording"
+      ],
+      "scope": "Optional hero studies; primary compact Porcelain plus Icon Studio remains authoritative. Original image positioning and 56px desktop header unchanged.",
+      "selfHostedFonts": {
+        "directory": "dist/fonts/",
+        "families": [
+          "Sofia Sans",
+          "Cormorant Garamond",
+          "Manrope",
+          "Lora"
+        ],
+        "scope": "Alternatives only; primary typography unchanged."
+      },
+      "serviceTruth": [
+        "Salon: manicure, pedicure, nail art",
+        "Courses: beginners and professionals",
+        "Airbrush: materials, equipment, consultations"
+      ],
+      "alternatives": [
+        {
+          "path": "dist/hero-1/",
+          "font": "Sofia Sans",
+          "description": "Explicit three-service headline"
+        },
+        {
+          "path": "dist/hero-2/",
+          "font": "Cormorant Garamond",
+          "description": "Service rows"
+        },
+        {
+          "path": "dist/hero-3/",
+          "font": "Manrope",
+          "description": "Large service-choice buttons"
+        },
+        {
+          "path": "dist/hero-4/",
+          "font": "Lora",
+          "description": "Three columns"
+        },
+        {
+          "path": "dist/hero-5/",
+          "font": "Georgia",
+          "description": "Revised headline, chips, and details"
+        }
+      ]
     }
   },
   "components": [

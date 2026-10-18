@@ -101,6 +101,15 @@ A further readable-header round responds to the user's report that the drawing b
 - `dist/clear-header-4/` — Rosewood Ribbon: solid `#784358` surface, light text, and ivory active tab.
 
 Compare them at `dist/clear-headers/`. Porcelain Bar (`clear-header-1`) is now the selected primary header, compacted to 56px desktop / 50px mobile / 46px below 480px height. The Icon Studio hero remains unchanged. The other options remain alternatives; their colors do not replace the primary tokens above.
+Five optional hero studies are available at `dist/hero-1/` through `dist/hero-5/`, compared at `dist/hero-options/`. Selection is pending; the comparison supports separate shortlists for font, layout, and wording. The primary compact Porcelain header plus Icon Studio hero remains authoritative. All five preserve the original image positioning and 56px desktop header:
+
+- Hero 1 — Sofia Sans: headline explicitly names the three services.
+- Hero 2 — Cormorant Garamond: service rows.
+- Hero 3 — Manrope: large service-choice buttons.
+- Hero 4 — Lora: three columns.
+- Hero 5 — Georgia: revised headline, chips, and supporting details.
+
+Sofia Sans, Cormorant Garamond, Manrope, and Lora are self-hosted in `dist/fonts/` for these alternatives; they do not change the primary typography tokens. Wording across the hero studies reflects the service offer: salon manicure, pedicure, and nail art; courses for beginners and professionals; airbrush materials, equipment, and consultations.
 ## Elevation & Depth
 
 There are no shadows. Depth comes from the photograph and translucent horizontal or vertical veil. The footer metadata has no separate surface or divider.
@@ -122,6 +131,7 @@ The selected Porcelain Bar navigation uses a compact row on an opaque porcelain 
 - Do read the final CSS overrides when checking small text sizes.
 - Don't add scrolling, animations, shadows, or interactive states to this documented artifact.
 - Don't restore the removed service summary bar or footer divider without a new request.
+
 
 
 
