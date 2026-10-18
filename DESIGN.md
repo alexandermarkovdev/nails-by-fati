@@ -112,7 +112,7 @@ Rose is the primary accent for the filled action, service icons, and active navi
 
 ## Typography
 
-Self-hosted Cormorant Garamond supplies the headline “Три посоки. Един почерк.” and service-row titles. The display token above is the desktop default; the headline becomes 53px on mobile and 47px below 700px viewport height. Service titles use 24px, reducing to 23px on mobile and 21px below 700px height, at weight 500 and line-height 1. Georgia remains the italic brand wordmark; Arial supplies body text and controls. The introduction is 14px with 1.75 line-height, or 12px on mobile. The compact header logo is 24px desktop and 23px mobile, with an 8px owner label. Navigation is 12px at 1280px and 11px at 1250px. Footer metadata remains 10px desktop and 9px mobile.
+Self-hosted Cormorant Garamond supplies the headline “Маникюр, обучения и аерограф в Пещера.” and service-row titles. The display token above is the desktop default; the headline becomes 53px on mobile and 47px below 700px viewport height. Service titles use 24px, reducing to 23px on mobile and 21px below 700px height, at weight 500 and line-height 1. Georgia remains the italic brand wordmark; Arial supplies body text and controls. The introduction is 14px with 1.75 line-height, or 12px on mobile. The compact header logo is 24px desktop and 23px mobile, with an 8px owner label. Navigation is 12px at 1280px and 11px at 1250px. Footer metadata remains 10px desktop and 9px mobile.
 
 ## Layout
 
