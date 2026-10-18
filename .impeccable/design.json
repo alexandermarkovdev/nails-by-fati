@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-18T15:10:29.7290202Z",
+  "generatedAt": "2026-10-18T15:17:27.8597276Z",
   "title": "Design System: Nails by Fati Balakchi",
   "extensions": {
     "typographyMeta": {
@@ -46,8 +46,8 @@
       }
     ],
     "layering": {
-      "desktopVeil": "linear-gradient(90deg,rgba(251,242,243,.35),rgba(251,242,243,.16) 35%,transparent 57%)",
-      "mobileVeil": "linear-gradient(180deg,rgba(251,242,243,.96),rgba(251,242,243,.94) 27%,rgba(251,242,243,.83) 43%,rgba(251,242,243,.04) 70%)"
+      "desktopVeil": "linear-gradient(90deg,rgba(251,242,243,.65),transparent 64%)",
+      "mobileVeil": "linear-gradient(180deg,#fbf2f3 5%,rgba(251,242,243,.94) 33%,rgba(251,242,243,.08) 64%)"
     },
     "source": "dist/index.html; extracted including final text-size overrides",
     "alternatives": [
@@ -69,20 +69,20 @@
       }
     ],
     "comparison": "dist/variants/",
-    "authority": "dist/index.html remains primary; alternatives are optional static explorations.",
+    "authority": "dist/index.html is an exact copy of user-selected dist/details-1/ Icon Studio. Header replacement selection remains pending.",
     "review": {
       "viewports": [
         "1280x720",
         "390x844"
       ],
       "disposition": "ship",
-      "source": "Parent agent visual review and independent reviewer"
+      "source": "Historical review of earlier primary iteration; not a review of the pending header choice."
     },
     "favoriteAlternative": "dist/variant-1/",
     "refinements": {
       "comparison": "dist/refinements/",
       "backgroundAuthority": "Exact background image positioning and veil of dist/variant-1/",
-      "status": "Optional alternatives for selection; main page remains primary authority.",
+      "status": "Details 1 Icon Studio selected and promoted to dist/index.html; Details 2–4 remain optional alternatives.",
       "alternatives": [
         {
           "path": "dist/details-1/",
@@ -101,6 +101,38 @@
           "description": "Sans and serif headline with disabled floating gallery toolbar"
         }
       ]
+    },
+    "headerAlternatives": {
+      "comparison": "dist/headers/",
+      "selection": "pending",
+      "scope": "Header only; 112px desktop and 84px mobile row; remainder identical to selected Icon Studio",
+      "alternatives": [
+        {
+          "path": "dist/header-1/",
+          "name": "Clean & Simple",
+          "description": "Plain text row"
+        },
+        {
+          "path": "dist/header-2/",
+          "name": "Centered Signature",
+          "description": "Logo between navigation groups"
+        },
+        {
+          "path": "dist/header-3/",
+          "name": "Floating Rose",
+          "description": "Rounded pale band"
+        },
+        {
+          "path": "dist/header-4/",
+          "name": "Burgundy Band",
+          "description": "Dark strip"
+        },
+        {
+          "path": "dist/header-5/",
+          "name": "Studio Masthead",
+          "description": "Centered logo above navigation"
+        }
+      ]
     }
   },
   "components": [
@@ -108,9 +140,9 @@
       "name": "Primary action",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Disabled appointment action; static full-opacity presentation.",
-      "html": "<button class=\"ds-primary\" disabled>Запази час<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-5-5 5 5-5 5\"/></svg></button>",
-      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:51px;padding:0 25px;border:1px solid var(--rose,#8a4058);font:11px Arial,Helvetica,sans-serif;letter-spacing:.2px;border-radius:2px;background:var(--rose,#8a4058);color:#fff9fa;cursor:default}.ds-primary:disabled{opacity:1;-webkit-text-fill-color:currentColor}.ds-primary svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.3;flex:none}"
+      "description": "Selected pill-shaped disabled appointment action with calendar and arrow.",
+      "html": "<button class=\"ds-primary\" disabled><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M7 2v6m10-6v6M3 11h18m-13 4h3m3 0h3\"/></svg>Запази час<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-5-5 5 5-5 5\"/></svg></button>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:51px;padding:0 22px;border:1px solid var(--rose,#8a4058);font:11px Arial,Helvetica,sans-serif;letter-spacing:.2px;border-radius:24px;background:var(--rose,#8a4058);color:#fff9fa;cursor:default}.ds-primary:disabled{opacity:1;-webkit-text-fill-color:currentColor}.ds-primary svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.3;flex:none}"
     },
     {
       "name": "Secondary action",
@@ -118,24 +150,26 @@
       "refersTo": "button-secondary",
       "description": "Disabled training action on translucent paper.",
       "html": "<button class=\"ds-secondary\" disabled>Курсове и обучения<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6 18 18 6M6 6h12v12\"/></svg></button>",
-      "css": ".ds-secondary{display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:51px;padding:0 25px;border:1px solid var(--rose,#8a4058);font:11px Arial,Helvetica,sans-serif;letter-spacing:.2px;border-radius:2px;background:rgba(251,242,243,.44);color:var(--rose,#8a4058);cursor:default}.ds-secondary:disabled{opacity:1;-webkit-text-fill-color:currentColor}.ds-secondary svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.3;flex:none}"
+      "css": ".ds-secondary{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:51px;padding:0 22px;border:1px solid var(--rose,#8a4058);font:11px Arial,Helvetica,sans-serif;letter-spacing:.2px;border-radius:24px;background:rgba(251,242,243,.44);color:var(--rose,#8a4058);cursor:default}.ds-secondary:disabled{opacity:1;-webkit-text-fill-color:currentColor}.ds-secondary svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.3;flex:none}"
     },
     {
       "name": "Current navigation item",
       "kind": "nav",
-      "description": "Disabled current-page label with rose underline.",
-      "html": "<nav aria-label=\"Основна навигация\"><button class=\"ds-nav\" disabled aria-current=\"page\">Начало</button></nav>",
-      "css": ".ds-nav{position:relative;padding:12px 0;background:none;border:0;font:11px/1.4 Arial,Helvetica,sans-serif;white-space:nowrap;color:var(--rose,#8a4058);cursor:default}.ds-nav:disabled{opacity:1;-webkit-text-fill-color:currentColor}.ds-nav:after{content:'';position:absolute;bottom:2px;left:0;right:0;height:1px;background:var(--rose,#8a4058)}"
+      "description": "Current Icon Studio navigation item with line icon above disabled label; header alternatives await selection.",
+      "html": "<nav aria-label=\"Основна навигация\"><button class=\"ds-nav\" disabled aria-current=\"page\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"m3 10 9-7 9 7v10h-6v-6H9v6H3Z\"/></svg><span>Начало</span></button></nav>",
+      "css": ".ds-nav{position:relative;display:inline-flex;align-items:center;flex-direction:column;gap:9px;padding:9px 0;background:none;border:0;font:10px/1.4 Arial,Helvetica,sans-serif;white-space:nowrap;color:var(--rose,#8a4058);cursor:default}.ds-nav:disabled{opacity:1;-webkit-text-fill-color:currentColor}.ds-nav:after{content:\"\";position:absolute;bottom:0;left:0;right:0;height:1px;background:var(--rose,#8a4058)}.ds-nav svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.25;stroke-linecap:round;stroke-linejoin:round}"
     }
   ],
   "narrative": {
-    "overview": "Supplied pink manicure photography spans a fixed viewport. Burgundy Georgia headings and Arial supporting text sit on a translucent pale surface. Bulgarian copy and disabled controls form the current static presentation.",
+    "overview": "User-selected Details 1 Icon Studio is the current primary page. Pink manicure photography retains Variant 1 positioning and veil. Burgundy Georgia headings, pill actions, menu icons, a calendar CTA, and inline service labels form the selected static design. Header replacement selection is pending.",
     "keyCharacteristics": [
+      "Selected Icon Studio primary",
       "Pink manicure photograph",
       "Burgundy Georgia headline",
-      "Arial supporting copy",
+      "Pill actions with calendar icon",
+      "Menu line icons and inline service labels",
       "Location and brand footer metadata without divider",
-      "Fixed viewport and static controls"
+      "Fixed viewport and disabled controls"
     ],
     "rules": [],
     "dos": [
