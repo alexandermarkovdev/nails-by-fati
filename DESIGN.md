@@ -185,6 +185,10 @@ Earlier polish captures remain under `.impeccable/review/polish*`. Current mural
 The current user-approved mural direction removes hard background edges between homepage sections. One full-scroll vertical gradient runs from paper through pink, lilac, peach, and rose: `linear-gradient(180deg,#fbf2f3 0%,#f9e4e8 12%,#eee1f1 29%,#e7d4e8 40%,#f4e4ef 53%,#fae6df 70%,#f1cfd6 88%,#e8bac9 100%)`. A single decorative, aria-hidden `.floral-mural` repeats the generated transparent `dist/design/floral-vine-v1.png` in vertically joined tiles; every even tile mirrors vertically to connect the stems. The mural uses multiply blending at .35 opacity desktop / .32 mobile and fades at both ends through a mask. It is non-interactive and ignores pointer events. The built-in image generation prompt and provenance are recorded in `floral-vine-generation.txt`.
 
 All individual homepage section backgrounds and the footer are transparent. The prior plum airbrush feature and dark footer are superseded only for the current home; the hero, layout, header, framed imagery, separate detail pages, and historical alternatives remain unchanged. Airbrush secondary actions use the mural accent and hover to a solid accent fill; the footer uses dark ink and a rose divider. Warm contact and blog panels preserve text legibility over the continuous surface.
+
+### Distilled home (2026-10-19)
+
+The owner found the home too cluttered; this pass supersedes the decorative details above wherever they conflict. The mural stays but is barely there: one soft tone `linear-gradient(180deg,#fbf2f3,#f8e8eb)` with the vine at .1 opacity (.09 mobile); the lilac and peach stops are gone. Each section has one photograph, one heading, one paragraph and one action. Removed from the home: the hero's secondary "Курсове и обучения" button and the repeated "NAILS BY FATI BALAKCHI" hero line; the salon overlay photo, script caption, tag list, address note and duplicate booking button; the training chips, secondary button, overlay certificate photo and script caption; the airbrush colour dots; the gallery and portrait captions; the blog teaser section (still reachable as Новини и блог); and the decorative contact photo. Frames are straight, with no rotations. The gallery uses cover-cropped images; on mobile it shows two tiles side by side and every section leads with its photograph. On phones (≤650px) the hero photograph has its own 380px band below the copy instead of sitting behind it, and the hero headline is 40px (35px ≤350px). The hero service details and button are 12px (button 13px on phones) and the location line is 11px. The video section and the preview contact form remain by owner choice.
 ## Elevation & Depth
 
 The opening hero retains its photograph and veil. The floral continuation uses overlapping photography, subtle rotations, warm frames, and diffuse rose/plum shadows to lift images from the artwork. The shared mobile navigation uses a subtle dropdown shadow. A dark dialog backdrop separates the gallery lightbox from the page. The footer metadata has no separate surface or divider.
@@ -203,7 +207,8 @@ The selected Porcelain Bar navigation uses functioning links in a compact row on
 
 - Do retain the supplied manicure image, pale pink surface, burgundy type, and Bulgarian text.
 - Do preserve the chosen opening hero and compact header while allowing both home and inner pages to scroll naturally.
-- Do retain the continuous floral mural, transparent section surfaces, layered supplied photographs, warm frames, and dark-ink footer.
+- Do retain the faint continuous floral mural, transparent section surfaces, straight warm frames, and dark-ink footer.
+- Don't add back overlay photos, tilted frames, script captions, chips, colour dots, the blog teaser or second buttons on the home without a new request; one action per section.
 - Do read the final CSS overrides when checking small text sizes.
 - Don't restore the superseded single-screen home policy; preserve working navigation, menu, gallery, and FAQs.
 - Don't restore the removed service summary bar or footer divider without a new request.

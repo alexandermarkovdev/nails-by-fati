@@ -1,10 +1,10 @@
 /* One mural spans the entire scroll. Mirrored joins keep the stems connected. */
-.home .home-sections{isolation:isolate;background:linear-gradient(180deg,#fbf2f3 0%,#f9e4e8 12%,#eee1f1 29%,#e7d4e8 40%,#f4e4ef 53%,#fae6df 70%,#f1cfd6 88%,#e8bac9 100%)}
-.home .floral-mural{position:absolute;inset:0;overflow:hidden;z-index:-1;pointer-events:none;user-select:none;opacity:.35;mix-blend-mode:multiply;mask-image:linear-gradient(180deg,transparent,#000 170px, #000 calc(100% - 90px),transparent)}
+.home .home-sections{isolation:isolate;background:linear-gradient(180deg,#fbf2f3,#f8e8eb)}
+.home .floral-mural{position:absolute;inset:0;overflow:hidden;z-index:-1;pointer-events:none;user-select:none;opacity:.1;mix-blend-mode:multiply;mask-image:linear-gradient(180deg,transparent,#000 170px, #000 calc(100% - 90px),transparent)}
 .home .floral-mural img{display:block;width:100%;height:auto;max-width:none;margin:0;vertical-align:top}
 .home .floral-mural img:nth-child(even){transform:scaleY(-1)}
 .home .home-sections>.content>section{background:transparent}
-.home .home-sections>.content>.home-feature.reverse,.home .home-sections>.content>.home-airbrush,.home .home-sections>.content>.home-gallery,.home .home-sections>.content>.home-about,.home .home-sections>.content>.home-reading,.home .home-sections>.content>.home-contact{background:transparent}
+.home .home-sections>.content>.home-feature.reverse,.home .home-sections>.content>.home-airbrush,.home .home-sections>.content>.home-gallery,.home .home-sections>.content>.home-about,.home .home-sections>.content>.home-contact{background:transparent}
 .home .home-airbrush:before{display:none}
 .home .home-airbrush,.home .home-sections>.content>.home-airbrush{color:#492833}
 .home .home-airbrush h2 em{color:#804463}
@@ -19,5 +19,5 @@
 .home .home-sections .site-footer a:hover{color:#823950}
 .home .site-footer a:focus-visible{outline-color:#8a4058}
 .home .home-contact .contact-details{background:#fff5eef0}
-.home .home-reading .home-article-links{background:#fff8f2cf}
-@media(max-width:700px){.home .floral-mural{opacity:.32;mask-image:linear-gradient(180deg,transparent,#000 100px,#000 calc(100% - 60px),transparent)}.home .home-sections>.content>section{background:transparent}.home .home-sections>.content>.home-feature.reverse,.home .home-sections>.content>.home-airbrush,.home .home-sections>.content>.home-gallery,.home .home-sections>.content>.home-about,.home .home-sections>.content>.home-reading,.home .home-sections>.content>.home-contact{background:transparent}}
+
+@media(max-width:700px){.home .floral-mural{opacity:.09;mask-image:linear-gradient(180deg,transparent,#000 100px,#000 calc(100% - 60px),transparent)}.home .home-sections>.content>section{background:transparent}.home .home-sections>.content>.home-feature.reverse,.home .home-sections>.content>.home-airbrush,.home .home-sections>.content>.home-gallery,.home .home-sections>.content>.home-about,.home .home-sections>.content>.home-contact{background:transparent}}
