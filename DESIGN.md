@@ -21,6 +21,9 @@ colors:
   field-line: "#d6bfc9"
   field-placeholder: "#8e7180"
   white: "#fff"
+  home-airbrush-surface: "#f2e2e9"
+  home-gallery-surface: "#f2e5ea"
+  home-topic-separator: "#b38094"
 typography:
   display:
     fontFamily: "'Cormorant Garamond', Georgia, serif"
@@ -78,7 +81,7 @@ components:
 
 ## Overview
 
-The primary `dist/index.html` preserves the selected Hero 2, “Elegant Service List,” composition, extended with working page and booking links. It combines the selected Cormorant Garamond hero and three service rows with the compact Porcelain Bar header (`clear-header-1`). The user chose Porcelain as small as possible; header selection is complete. The current page preserves the supplied pink manicure photograph and uses burgundy serif typography for the salon identity. Bulgarian copy sits over the pale left side; the photograph dominates the right side. The chosen home retains its fixed image and Elegant Service List composition. The completed multipage extension adds functioning navigation, service links, booking links, and interactive inner-page features.
+The primary `dist/index.html` preserves the selected Hero 2, “Elegant Service List,” composition, extended with working page and booking links. It combines the selected Cormorant Garamond hero and three service rows with the compact Porcelain Bar header (`clear-header-1`). The user chose Porcelain as small as possible; header selection is complete. The current page preserves the supplied pink manicure photograph and uses burgundy serif typography for the salon identity. Bulgarian copy sits over the pale left side; the photograph dominates the right side. The home now scrolls by explicit user choice, preserving the Elegant Service List and supplied image in its opening viewport. The completed multipage extension adds functioning navigation, service links, booking links, and interactive inner-page features.
 
 ## Colors
 
@@ -90,11 +93,11 @@ Self-hosted Cormorant Garamond supplies the headline “Три посоки. Е�
 
 ## Layout
 
-The home page is a 100svh grid with header, flexible main, and footer rows. On home only, document and body suppress overflow and overscroll. The supplied `dist/nails.png` covers the entire viewport with centered cropping. A horizontal translucent veil protects the left copy. Desktop hero width is 49%, capped at 630px, with vertically centered content; the footer retains only the location/identity metadata, with no horizontal divider or service summary bar.
+The home is now a naturally scrolling document with a sticky compact Porcelain header. Its opening hero is a grid below the header, sized to calc(100svh - 56px) desktop and calc(100svh - 50px) mobile, with minimum heights of 560px and 600px respectively. The supplied `dist/nails.png` is restricted to the opening hero. It retains original cropping with a negative 56px desktop / 50px mobile offset compensating for moving the header outside the hero. A paper fade at the hero bottom is 90px desktop / 75px mobile. A horizontal translucent veil protects the left copy. Desktop hero width is 49%, capped at 630px, with vertically centered content; the footer retains only the location/identity metadata, with no horizontal divider or service summary bar.
 
 At 1750px and wider, page insets become 7vw and the hero narrows to 46%. At 1250px and below, the header and supporting type compact. Shared navigation collapses to the working mobile menu at 1050px. At 650px and below, the hero becomes full width without a maximum width, and content aligns toward the top. The photograph crops at 66% bottom and a vertical veil is much more opaque behind the upper copy. This creates text above the lower photographic area; it is still one background image, not a separate image block. The owner label stays 8px and the footer line becomes 9px.
 
-Height-specific compaction remains present. The final Icon Studio overrides are authoritative: the headline is 47px below 700px viewport height, service rows compact to 7px vertical padding, and the signature is absent. The selected compact Porcelain header is 56px desktop and 50px mobile, reducing to 46px below 480px viewport height. Its solid porcelain surface protects navigation readability. No scrolling or animated layout is present.
+Height-specific compaction remains present. The final Icon Studio overrides are authoritative: the headline is 47px below 700px viewport height, service rows compact to 7px vertical padding, and the signature is absent. The selected compact Porcelain header is 56px desktop and 50px mobile, reducing to 46px below 480px viewport height. Its solid porcelain surface protects navigation readability. The previous single-screen home policy is superseded by explicit user choice of a scrolling home.
 
 Four optional static alternatives are available at `dist/variant-1/` through `dist/variant-4/`, with a comparison page at `dist/variants/`. They do not replace the main page as the design authority:
 
@@ -142,13 +145,16 @@ Five optional hero studies are available at `dist/hero-1/` through `dist/hero-5/
 Sofia Sans, Cormorant Garamond, Manrope, and Lora are self-hosted in `dist/fonts/` for the hero studies. Cormorant Garamond is now also the primary hero font; the other three remain alternative fonts. Wording across the hero studies reflects the service offer: salon manicure, pedicure, and nail art; courses for beginners and professionals; airbrush materials, equipment, and consultations.
 The selected Hero 2 visual review had a ship disposition and applies to the unchanged production hero; only the document title changed on promotion.
 
-The completed multipage extension uses `dist/site.css` and `dist/site.js`. Inner routes are `/salon/`, `/obucheniya/`, `/aerograf/`, `/za-nas/`, `/galeriya/`, `/novini/`, and `/kontakti/`, plus three articles. These pages scroll naturally under a sticky 56px header (50px at the 700px mobile breakpoint); the approved home stays fixed. Inner content is capped at 1300px with 50px side padding, reducing to 38px at 1250px, 30px at 1050px, and 24px at 700px. Two-column sections stack at 700px; gallery columns reduce from three to two, while article and course layouts become single-column.
+The completed multipage extension uses `dist/site.css` and `dist/site.js`. Inner routes are `/salon/`, `/obucheniya/`, `/aerograf/`, `/za-nas/`, `/galeriya/`, `/novini/`, and `/kontakti/`, plus three articles. These pages scroll naturally under a sticky 56px header (50px at the 700px mobile breakpoint); the home now also scrolls while preserving its selected opening hero. Inner content is capped at 1300px with 50px side padding, reducing to 38px at 1250px, 30px at 1050px, and 24px at 700px. Two-column sections stack at 700px; gallery columns reduce from three to two, while article and course layouts become single-column.
 
 Inner display type is Cormorant Garamond, while body type is self-hosted Sofia Sans (17px/1.65 desktop; common mobile paragraphs 16px). Inner controls have pill corners, fields have subtly rounded corners, and images stay nearly square-cornered. The shared mobile menu, gallery filters and lightbox, and course FAQs work. Focus uses a rose 2px outline with 4px offset; reduced-motion preference removes transitions. Inner action hover transitions take .18s.
 
 Main navigation and the three home service rows link to their pages. Booking calls to action use the exact official destination `https://studio24.bg/m/nails-by-fati-balakchi-s7379`. The contact email `hello@example.com` is an approved placeholder clearly marked as a sample. The contact form produces a preview only and sends nothing.
 
 Twenty referenced photo copies are stored in `dist/photos/`; supplied originals under `C:\Users\Home\Documents\Claude\nails\images` remain untouched. Student-result gallery images are explicitly labelled as learning examples. The portrait uses `studio05`. Primary content references are the official Studio24 listing, `https://airbrush.convertbuilder.com/`, and the user-supplied Facebook photo URL. No dates or prices are invented.
+The user-requested scrolling home is implemented by `dist/home-scroll.css`, superseding the earlier fixed-home policy. The sticky home header remains 56px desktop / 50px mobile. Below the first-viewport hero, `.inside.home-sections` adds salon, training, and airbrush sections, a three-photo gallery strip, about content, three blog links, and a full footer. The final `#contact` section includes full contact details, the explicitly marked placeholder email, and the same preview-only demo form. Home contact header links target `#contact`; separate detail pages remain available. Shared `site.js` closes the mobile menu when a link is clicked.
+
+Home continuation content is capped at 1300px with 50px insets, reducing to 30px at 1050px and 24px at 700px. Desktop feature sections use two equal columns with 75px gaps and 75px vertical padding; they stack at 700px with 28px gaps and 42px padding. Continuation headings use Cormorant at `clamp(38px,3.5vw,53px)` and body paragraphs use Sofia Sans at 19px/1.65, becoming 17px/1.6 on mobile. The gallery strip retains three columns with smaller mobile gaps. The airbrush block, gallery backing, and topic dots use their new home tokens. Earlier fixed-home alternatives remain historical studies.
 ## Elevation & Depth
 
 The home uses no decorative shadows; its depth comes from the photograph and translucent veil. The shared mobile navigation uses a subtle dropdown shadow. A dark dialog backdrop separates the gallery lightbox from the page. The footer metadata has no separate surface or divider.
@@ -166,10 +172,11 @@ The selected Porcelain Bar navigation uses functioning links in a compact row on
 ## Do's and Don'ts
 
 - Do retain the supplied manicure image, pale pink surface, burgundy type, and Bulgarian text.
-- Do preserve the approved fixed-viewport home while allowing inner pages to scroll naturally.
+- Do preserve the chosen opening hero while allowing both home and inner pages to scroll naturally.
 - Do read the final CSS overrides when checking small text sizes.
-- Don't apply the home overflow restriction to inner pages; preserve working navigation, menu, gallery, and FAQs.
+- Don't restore the superseded single-screen home policy; preserve working navigation, menu, gallery, and FAQs.
 - Don't restore the removed service summary bar or footer divider without a new request.
+
 
 
 

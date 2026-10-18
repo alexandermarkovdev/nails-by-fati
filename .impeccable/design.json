@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-18T15:55:05.9619734Z",
+  "generatedAt": "2026-10-18T16:07:27.7068218Z",
   "title": "Design System: Nails by Fati Balakchi",
   "extensions": {
     "typographyMeta": {
@@ -89,7 +89,7 @@
       }
     ],
     "comparison": "dist/variants/",
-    "authority": "Approved Elegant Service List home and compact Porcelain header preserved, extended with working navigation and booking. Seven inner routes and three articles share dist/site.css and dist/site.js.",
+    "authority": "User-requested scrolling home supersedes the previous single-screen policy. Selected Elegant Service List opening hero and supplied image preserved; compact Porcelain header is sticky. Separate detail pages retained.",
     "review": {
       "disposition": "ship",
       "source": "Prior Hero 2 visual review applies to unchanged hero promoted to main; production title only changed."
@@ -259,7 +259,7 @@
         "/kontakti/"
       ],
       "articles": 3,
-      "layout": "Inner pages scroll naturally beneath sticky 56px header / 50px at max-width 700px. Approved home remains fixed.",
+      "layout": "Home and inner pages scroll naturally. Home opening hero remains first-viewport composition below sticky 56px/50px compact Porcelain header.",
       "body": "Sofia Sans 17px/1.65 desktop; common mobile paragraphs 16px",
       "navigation": "Working page links and home service links",
       "features": [
@@ -293,6 +293,29 @@
       "focus": "2px solid #8a4058; outline-offset:4px",
       "reducedMotion": "Transitions removed",
       "skipLink": "Visible on focus"
+    },
+    "scrollingHome": {
+      "source": "dist/home-scroll.css",
+      "policy": "Explicit user choice supersedes earlier fixed-home policy; alternatives remain historical",
+      "header": "Sticky 56px desktop / 50px mobile",
+      "opening": "calc(100svh - 56px), minimum 560px desktop; calc(100svh - 50px), minimum 600px mobile",
+      "image": "Restricted to opening hero; original positioning preserved with -56px/-50px offset compensating for moved header",
+      "bottomFade": "90px desktop / 75px mobile, transparent to #fbf2f3",
+      "sections": [
+        "Salon",
+        "Training",
+        "Airbrush",
+        "Gallery: 3 photos",
+        "About",
+        "Blog: 3 links",
+        "Contact #contact",
+        "Full footer"
+      ],
+      "contact": "Full details, sample placeholder email, and preview-only demo form",
+      "homeHeaderContactTarget": "#contact",
+      "menu": "site.js closes mobile menu on link click",
+      "continuation": "1300px maximum; insets 50px / 30px at1050 / 24px at700; two-column features stack at700",
+      "body": "Sofia Sans 19px/1.65 desktop;17px/1.6 mobile"
     }
   },
   "components": [
@@ -312,29 +335,31 @@
     }
   ],
   "narrative": {
-    "overview": "Selected Elegant Service List home and compact Porcelain Bar remain the visual authority. Seven inner routes and three articles extend the blush and burgundy system with Cormorant display and Sofia Sans body. Home remains fixed; inner pages scroll naturally. Navigation, service links, booking, gallery, mobile menu, and course FAQs work. The contact form is preview-only.",
+    "overview": "The user chose a scrolling home. The selected Elegant Service List and supplied image remain in the opening viewport beneath a sticky compact Porcelain header. Below it are salon, training, airbrush, gallery, about, blog, and contact sections plus a full footer. Home contact links target #contact; separate detail pages remain. The prior single-screen home policy is superseded.",
     "keyCharacteristics": [
-      "Approved fixed-image Elegant Service List home",
-      "Compact Porcelain Bar header",
-      "Scrolling inner pages",
-      "Cormorant Garamond display and Sofia Sans inner-page body",
+      "Scrolling home with preserved opening hero",
+      "Sticky compact Porcelain header",
+      "Supplied image confined to first viewport with subtle bottom fade",
+      "Cormorant Garamond display and Sofia Sans continuation body",
+      "Home service sections and contact anchor",
       "Working navigation and official booking links",
-      "Labelled learning-example gallery",
-      "Contact preview without sending"
+      "Preview-only demo contact form",
+      "Separate detail routes retained"
     ],
     "rules": [],
     "dos": [
-      "Preserve the chosen home composition.",
-      "Allow inner pages to scroll naturally.",
-      "Use exact official Studio24 booking URL.",
-      "Label student-result images as learning examples.",
-      "Mark sample email and form preview clearly."
+      "Preserve the chosen first-viewport hero and image positioning.",
+      "Allow home and inner pages to scroll naturally.",
+      "Use #contact for home header contact links.",
+      "Preserve separate detail pages.",
+      "Keep sample email and preview-only form explicit."
     ],
     "donts": [
-      "Do not invent dates or prices.",
+      "Do not restore the superseded single-screen home policy.",
       "Do not send contact form data.",
-      "Do not alter original supplied images.",
-      "Do not treat earlier alternatives as current primary authority."
+      "Do not invent dates or prices.",
+      "Do not alter supplied image originals.",
+      "Do not treat historical alternatives as current authority."
     ]
   }
 }
