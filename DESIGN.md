@@ -36,6 +36,17 @@ colors:
   floral-footer: "#512a3b"
   floral-light: "#fff1ee"
   floral-footer-muted: "#e1c4ce"
+  mural-pink: "#f9e4e8"
+  mural-lilac-light: "#eee1f1"
+  mural-lilac: "#e7d4e8"
+  mural-lilac-rose: "#f4e4ef"
+  mural-peach: "#fae6df"
+  mural-rose: "#f1cfd6"
+  mural-rose-deep: "#e8bac9"
+  mural-accent: "#804463"
+  mural-accent-line: "#9b647e"
+  mural-frame: "#fff6f7"
+  mural-footer-line: "#bc879b"
 typography:
   display:
     fontFamily: "'Cormorant Garamond', Georgia, serif"
@@ -166,11 +177,14 @@ Main navigation and the three home service rows link to their pages. Booking cal
 Twenty referenced photo copies are stored in `dist/photos/`; supplied originals under `C:\Users\Home\Documents\Claude\nails\images` remain untouched. Student-result gallery images are explicitly labelled as learning examples. The portrait uses `studio05`. Primary content references are the official Studio24 listing, `https://airbrush.convertbuilder.com/`, and the user-supplied Facebook photo URL. No dates or prices are invented.
 The user-requested scrolling home is implemented by `dist/home-scroll.css`, superseding the earlier fixed-home policy. The sticky home header remains 56px desktop / 50px mobile. Below the first-viewport hero, `.inside.home-sections` adds salon, training, and airbrush sections, a three-photo gallery strip, about content, three blog links, and a full footer. The final `#contact` section includes full contact details, the explicitly marked placeholder email, and the same preview-only demo form. Home contact header links target `#contact`; separate detail pages remain available. Shared `site.js` closes the mobile menu when a link is clicked.
 
-The final homepage continuation is governed by `dist/floral-home.css`, superseding the earlier plain section treatment. The hero and header remain pinned to the selected design. Below them, full-width floral artwork from five supplied assets in `dist/design/` forms each section surface: floral-right, floral-left, floral-rose, floral-bottom, and floral-corners. Section insets use `max(5vw,calc((100vw - 1160px)/2))`; mobile insets are 25px. Desktop feature sections have two columns, 9% gaps, and generous 105px/115px vertical spacing. At 700px they stack with 30px gaps and 60px/65px spacing. Continuation headings are `clamp(46px,4.5vw,66px)` at 1.01 line-height, becoming 45px on mobile; Sofia Sans body stays 19px/1.65 desktop and 17px/1.6 mobile.
+The layered homepage composition is defined by `dist/floral-home.css`; the current surface authority is the later `dist/continuous-floral.css`, which supersedes individual section backgrounds, the plum airbrush block, and the dark footer. The hero and header remain pinned to the selected design. The five earlier supplied floral backgrounds remain historical assets; current sections have transparent backgrounds over one continuous mural. Section insets use `max(5vw,calc((100vw - 1160px)/2))`; mobile insets are 25px. Desktop feature sections have two columns, 9% gaps, and generous 105px/115px vertical spacing. At 700px they stack with 30px gaps and 60px/65px spacing. Continuation headings are `clamp(46px,4.5vw,66px)` at 1.01 line-height, becoming 45px on mobile; Sofia Sans body stays 19px/1.65 desktop and 17px/1.6 mobile.
 
-The salon section layers an arched photograph with a smaller tilted framed detail. Training combines a portrait and overlapping certificate photograph. The airbrush section uses a plum surface with faint screened floral art and a tilted product frame. Gallery images sit in warm frames at varied angles; the mobile layout uses two columns with the third image centered below. The Fati portrait has a tilted warm frame and serif caption. Blog links sit on a translucent warm panel over floral artwork. Contact details and the preview form use warm opaque panels over a rich floral background; the footer is warm dark plum. Earlier fixed-home and plain-section alternatives remain historical studies.
+The salon section layers an arched photograph with a smaller tilted framed detail. Training combines a portrait and overlapping certificate photograph. The airbrush section now falls over the shared lavender gradient with dark ink, a muted orchid accent, and a pale tilted product frame. Gallery images sit in warm frames at varied angles; the mobile layout uses two columns with the third image centered below. The Fati portrait has a tilted warm frame and serif caption. Blog links sit on a translucent warm panel over the mural. Contact details and the preview form retain warm panels. The footer continues the shared rose mural surface with dark ink and a muted rose divider. Earlier fixed-home and plain-section alternatives remain historical studies.
 
-The final polish captures are recorded under `.impeccable/review/polish*`. The current independent reviewer disposition is ship, with no blockers.
+Earlier polish captures remain under `.impeccable/review/polish*`. Current mural review captures are `.impeccable/review/mural-*.png`; the independent reviewer disposition is ship with no material defects.
+The current user-approved mural direction removes hard background edges between homepage sections. One full-scroll vertical gradient runs from paper through pink, lilac, peach, and rose: `linear-gradient(180deg,#fbf2f3 0%,#f9e4e8 12%,#eee1f1 29%,#e7d4e8 40%,#f4e4ef 53%,#fae6df 70%,#f1cfd6 88%,#e8bac9 100%)`. A single decorative, aria-hidden `.floral-mural` repeats the generated transparent `dist/design/floral-vine-v1.png` in vertically joined tiles; every even tile mirrors vertically to connect the stems. The mural uses multiply blending at .35 opacity desktop / .32 mobile and fades at both ends through a mask. It is non-interactive and ignores pointer events. The built-in image generation prompt and provenance are recorded in `floral-vine-generation.txt`.
+
+All individual homepage section backgrounds and the footer are transparent. The prior plum airbrush feature and dark footer are superseded only for the current home; the hero, layout, header, framed imagery, separate detail pages, and historical alternatives remain unchanged. Airbrush secondary actions use the mural accent and hover to a solid accent fill; the footer uses dark ink and a rose divider. Warm contact and blog panels preserve text legibility over the continuous surface.
 ## Elevation & Depth
 
 The opening hero retains its photograph and veil. The floral continuation uses overlapping photography, subtle rotations, warm frames, and diffuse rose/plum shadows to lift images from the artwork. The shared mobile navigation uses a subtle dropdown shadow. A dark dialog backdrop separates the gallery lightbox from the page. The footer metadata has no separate surface or divider.
@@ -189,10 +203,11 @@ The selected Porcelain Bar navigation uses functioning links in a compact row on
 
 - Do retain the supplied manicure image, pale pink surface, burgundy type, and Bulgarian text.
 - Do preserve the chosen opening hero and compact header while allowing both home and inner pages to scroll naturally.
-- Do retain the final floral section surfaces, layered supplied photographs, warm frames, and dark plum footer.
+- Do retain the continuous floral mural, transparent section surfaces, layered supplied photographs, warm frames, and dark-ink footer.
 - Do read the final CSS overrides when checking small text sizes.
 - Don't restore the superseded single-screen home policy; preserve working navigation, menu, gallery, and FAQs.
 - Don't restore the removed service summary bar or footer divider without a new request.
+
 
 
 

@@ -1,0 +1,122 @@
+[
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "C:\\Users\\Home\\.codex\\.chatgpt-projects\\g-p-6ad4d9786a908191904ace1c469beb40\\sites\\nails-by-fati\\dist\\continuous-floral.css",
+    "line": 2,
+    "snippet": "Undocumented color #eee1f1 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#eee1f1"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "C:\\Users\\Home\\.codex\\.chatgpt-projects\\g-p-6ad4d9786a908191904ace1c469beb40\\sites\\nails-by-fati\\dist\\continuous-floral.css",
+    "line": 2,
+    "snippet": "Undocumented color #e7d4e8 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#e7d4e8"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "C:\\Users\\Home\\.codex\\.chatgpt-projects\\g-p-6ad4d9786a908191904ace1c469beb40\\sites\\nails-by-fati\\dist\\continuous-floral.css",
+    "line": 3,
+    "snippet": "Undocumented color #000 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#000"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "C:\\Users\\Home\\.codex\\.chatgpt-projects\\g-p-6ad4d9786a908191904ace1c469beb40\\sites\\nails-by-fati\\dist\\continuous-floral.css",
+    "line": 10,
+    "snippet": "Undocumented color #804463 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#804463"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "C:\\Users\\Home\\.codex\\.chatgpt-projects\\g-p-6ad4d9786a908191904ace1c469beb40\\sites\\nails-by-fati\\dist\\continuous-floral.css",
+    "line": 12,
+    "snippet": "Undocumented color #9b647e is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#9b647e"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "C:\\Users\\Home\\.codex\\.chatgpt-projects\\g-p-6ad4d9786a908191904ace1c469beb40\\sites\\nails-by-fati\\dist\\continuous-floral.css",
+    "line": 13,
+    "snippet": "Undocumented color #804463 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#804463"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "C:\\Users\\Home\\.codex\\.chatgpt-projects\\g-p-6ad4d9786a908191904ace1c469beb40\\sites\\nails-by-fati\\dist\\continuous-floral.css",
+    "line": 15,
+    "snippet": "Undocumented color #5a2c5226 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#5a2c5226"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "C:\\Users\\Home\\.codex\\.chatgpt-projects\\g-p-6ad4d9786a908191904ace1c469beb40\\sites\\nails-by-fati\\dist\\continuous-floral.css",
+    "line": 18,
+    "snippet": "Undocumented color #bc879b is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#bc879b"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "C:\\Users\\Home\\.codex\\.chatgpt-projects\\g-p-6ad4d9786a908191904ace1c469beb40\\sites\\nails-by-fati\\dist\\continuous-floral.css",
+    "line": 19,
+    "snippet": "Undocumented color #823950 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#823950"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "C:\\Users\\Home\\.codex\\.chatgpt-projects\\g-p-6ad4d9786a908191904ace1c469beb40\\sites\\nails-by-fati\\dist\\continuous-floral.css",
+    "line": 23,
+    "snippet": "Undocumented color #000 is outside DESIGN.md colors",
+    "advisory": true,
+    "ignoreValue": "#000"
+  }
+]

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-18T16:17:38.5102241Z",
+  "generatedAt": "2026-10-18T16:25:36.1058189Z",
   "title": "Design System: Nails by Fati Balakchi",
   "extensions": {
     "typographyMeta": {
@@ -31,8 +31,8 @@
       },
       {
         "name": "airbrush-frame",
-        "value": "0 25px 55px #28111d44",
-        "purpose": "Product frame above plum floral surface"
+        "value": "0 25px 55px #5a2c5226",
+        "purpose": "Pale product frame above continuous lavender mural"
       }
     ],
     "motion": [
@@ -112,9 +112,9 @@
     "authority": "User-requested scrolling home supersedes the previous single-screen policy. Selected Elegant Service List opening hero and supplied image preserved; compact Porcelain header is sticky. Separate detail pages retained.",
     "review": {
       "disposition": "ship",
-      "blockers": 0,
-      "source": "Current independent reviewer of final floral homepage",
-      "captures": ".impeccable/review/polish*"
+      "materialDefects": 0,
+      "source": "Current independent reviewer of continuous mural homepage",
+      "captures": ".impeccable/review/mural-*.png"
     },
     "favoriteAlternative": "dist/variant-1/",
     "refinements": {
@@ -341,7 +341,7 @@
     },
     "floralHomepage": {
       "source": "dist/floral-home.css",
-      "authority": "Final homepage continuation supersedes plain white section treatment; selected hero and header unchanged",
+      "authority": "Layered photographic composition remains current; section-specific backgrounds, plum airbrush, and dark footer superseded by continuous-floral.css.",
       "assets": [
         "dist/design/floral-right.png",
         "dist/design/floral-left.png",
@@ -366,7 +366,37 @@
       "review": {
         "disposition": "ship",
         "blockers": 0,
-        "source": "Current independent reviewer"
+        "source": "Historical review of preceding section-background design; current review is continuousMural.review."
+      }
+    },
+    "continuousMural": {
+      "source": "dist/continuous-floral.css",
+      "authority": "Current user-approved homepage surface direction; supersedes section backgrounds, plum airbrush block, and dark footer only on home",
+      "asset": "dist/design/floral-vine-v1.png",
+      "provenance": "floral-vine-generation.txt",
+      "generation": "Built-in image_gen; transparent artwork",
+      "decoration": "One aria-hidden .floral-mural with vertically joined tiles; even tiles scaleY(-1); non-interactive",
+      "gradient": "linear-gradient(180deg,#fbf2f3 0%,#f9e4e8 12%,#eee1f1 29%,#e7d4e8 40%,#f4e4ef 53%,#fae6df 70%,#f1cfd6 88%,#e8bac9 100%)",
+      "blend": "multiply",
+      "opacityDesktop": 0.35,
+      "opacityMobile": 0.32,
+      "maskDesktop": "linear-gradient(180deg,transparent,#000 170px,#000 calc(100% - 90px),transparent)",
+      "maskMobile": "linear-gradient(180deg,transparent,#000 100px,#000 calc(100% - 60px),transparent)",
+      "sections": "Transparent backgrounds; no hard section edges",
+      "airbrush": "Shared lavender surface, dark ink, mural accent, pale frame",
+      "footer": "Transparent continuation with dark ink and muted rose divider",
+      "unchanged": [
+        "Selected hero",
+        "Header",
+        "Layout",
+        "Layered photos and frames",
+        "Detail pages",
+        "Historical alternatives"
+      ],
+      "review": {
+        "captures": ".impeccable/review/mural-*.png",
+        "disposition": "ship",
+        "materialDefects": 0
       }
     }
   },
@@ -387,34 +417,31 @@
     }
   ],
   "narrative": {
-    "overview": "The selected Elegant Service List opening hero and compact Porcelain header remain unchanged. The scrolling homepage continuation now uses supplied floral artwork as full section surfaces, layered photographs, arched crops, tilted warm frames, a plum airbrush feature, rich contact panels, and a warm dark footer. The final independent review is ship with no blockers.",
+    "overview": "User-approved continuous mural spans the scrolling homepage over a pink-to-lilac-to-peach-to-rose gradient. Transparent generated floral vine tiles join vertically with alternating mirroring. Section and footer backgrounds are transparent; airbrush uses dark ink over lavender and the footer continues the rose surface. Selected hero, header, layout, and layered photography remain unchanged.",
     "keyCharacteristics": [
       "Preserved selected hero and compact header",
-      "Full floral homepage section surfaces",
-      "Layered supplied photography and arched crops",
-      "Warm tilted frames and serif captions",
-      "Plum airbrush feature",
-      "Floral blog and rich contact",
-      "Warm dark footer",
+      "Single continuous floral mural",
+      "Pink lilac peach rose gradient",
+      "Transparent section boundaries",
+      "Mirrored generated transparent vine tiles",
+      "Layered supplied photography and warm frames",
+      "Lavender airbrush and dark-ink footer",
       "Working links and preview-only form"
     ],
     "rules": [],
     "dos": [
-      "Preserve the chosen first-viewport hero and image positioning.",
-      "Allow home and inner pages to scroll naturally.",
-      "Use #contact for home header contact links.",
-      "Preserve separate detail pages.",
-      "Keep sample email and preview-only form explicit.",
-      "Retain the final floral surfaces and layered supplied imagery.",
-      "Keep hero and header pinned to the selected design."
+      "Preserve selected hero, header, and layout.",
+      "Keep the mural continuous across transparent homepage sections.",
+      "Retain supplied layered photos and warm frames.",
+      "Keep dark ink readable over lavender and rose surfaces.",
+      "Keep sample email and preview-only form explicit."
     ],
     "donts": [
-      "Do not restore the superseded single-screen home policy.",
+      "Do not restore hard section background edges on home.",
+      "Do not restore superseded plum airbrush or dark footer on home.",
       "Do not send contact form data.",
-      "Do not invent dates or prices.",
       "Do not alter supplied image originals.",
-      "Do not treat historical alternatives as current authority.",
-      "Do not revert the homepage continuation to plain white sections."
+      "Do not treat historical alternatives as current authority."
     ]
   }
 }
