@@ -24,6 +24,18 @@ colors:
   home-airbrush-surface: "#f2e2e9"
   home-gallery-surface: "#f2e5ea"
   home-topic-separator: "#b38094"
+  floral-base: "#f9e9e8"
+  floral-body: "#684450"
+  floral-caption: "#704652"
+  floral-plum: "#663246"
+  floral-frame: "#fff8f3"
+  floral-gallery: "#fceceb"
+  floral-about: "#f2d6d7"
+  floral-reading: "#f7e2e2"
+  floral-contact: "#f2d2d4"
+  floral-footer: "#512a3b"
+  floral-light: "#fff1ee"
+  floral-footer-muted: "#e1c4ce"
 typography:
   display:
     fontFamily: "'Cormorant Garamond', Georgia, serif"
@@ -154,14 +166,18 @@ Main navigation and the three home service rows link to their pages. Booking cal
 Twenty referenced photo copies are stored in `dist/photos/`; supplied originals under `C:\Users\Home\Documents\Claude\nails\images` remain untouched. Student-result gallery images are explicitly labelled as learning examples. The portrait uses `studio05`. Primary content references are the official Studio24 listing, `https://airbrush.convertbuilder.com/`, and the user-supplied Facebook photo URL. No dates or prices are invented.
 The user-requested scrolling home is implemented by `dist/home-scroll.css`, superseding the earlier fixed-home policy. The sticky home header remains 56px desktop / 50px mobile. Below the first-viewport hero, `.inside.home-sections` adds salon, training, and airbrush sections, a three-photo gallery strip, about content, three blog links, and a full footer. The final `#contact` section includes full contact details, the explicitly marked placeholder email, and the same preview-only demo form. Home contact header links target `#contact`; separate detail pages remain available. Shared `site.js` closes the mobile menu when a link is clicked.
 
-Home continuation content is capped at 1300px with 50px insets, reducing to 30px at 1050px and 24px at 700px. Desktop feature sections use two equal columns with 75px gaps and 75px vertical padding; they stack at 700px with 28px gaps and 42px padding. Continuation headings use Cormorant at `clamp(38px,3.5vw,53px)` and body paragraphs use Sofia Sans at 19px/1.65, becoming 17px/1.6 on mobile. The gallery strip retains three columns with smaller mobile gaps. The airbrush block, gallery backing, and topic dots use their new home tokens. Earlier fixed-home alternatives remain historical studies.
+The final homepage continuation is governed by `dist/floral-home.css`, superseding the earlier plain section treatment. The hero and header remain pinned to the selected design. Below them, full-width floral artwork from five supplied assets in `dist/design/` forms each section surface: floral-right, floral-left, floral-rose, floral-bottom, and floral-corners. Section insets use `max(5vw,calc((100vw - 1160px)/2))`; mobile insets are 25px. Desktop feature sections have two columns, 9% gaps, and generous 105px/115px vertical spacing. At 700px they stack with 30px gaps and 60px/65px spacing. Continuation headings are `clamp(46px,4.5vw,66px)` at 1.01 line-height, becoming 45px on mobile; Sofia Sans body stays 19px/1.65 desktop and 17px/1.6 mobile.
+
+The salon section layers an arched photograph with a smaller tilted framed detail. Training combines a portrait and overlapping certificate photograph. The airbrush section uses a plum surface with faint screened floral art and a tilted product frame. Gallery images sit in warm frames at varied angles; the mobile layout uses two columns with the third image centered below. The Fati portrait has a tilted warm frame and serif caption. Blog links sit on a translucent warm panel over floral artwork. Contact details and the preview form use warm opaque panels over a rich floral background; the footer is warm dark plum. Earlier fixed-home and plain-section alternatives remain historical studies.
+
+The final polish captures are recorded under `.impeccable/review/polish*`. The current independent reviewer disposition is ship, with no blockers.
 ## Elevation & Depth
 
-The home uses no decorative shadows; its depth comes from the photograph and translucent veil. The shared mobile navigation uses a subtle dropdown shadow. A dark dialog backdrop separates the gallery lightbox from the page. The footer metadata has no separate surface or divider.
+The opening hero retains its photograph and veil. The floral continuation uses overlapping photography, subtle rotations, warm frames, and diffuse rose/plum shadows to lift images from the artwork. The shared mobile navigation uses a subtle dropdown shadow. A dark dialog backdrop separates the gallery lightbox from the page. The footer metadata has no separate surface or divider.
 
 ## Shapes
 
-The composition uses rectangular regions and a thin header divider. Buttons have pill-shaped corners via the button radius token. Thin outline SVGs provide the action arrows, menu items, calendar action, service labels, ornament, and location pin.
+The opening composition retains its thin header divider. Floral continuation imagery adds arched salon corners, an asymmetric training corner, overlapping rectangular details, and gently tilted warm frames. Buttons have pill-shaped corners via the button radius token. Thin outline SVGs provide the action arrows, menu items, calendar action, service labels, ornament, and location pin.
 
 ## Components
 
@@ -172,10 +188,12 @@ The selected Porcelain Bar navigation uses functioning links in a compact row on
 ## Do's and Don'ts
 
 - Do retain the supplied manicure image, pale pink surface, burgundy type, and Bulgarian text.
-- Do preserve the chosen opening hero while allowing both home and inner pages to scroll naturally.
+- Do preserve the chosen opening hero and compact header while allowing both home and inner pages to scroll naturally.
+- Do retain the final floral section surfaces, layered supplied photographs, warm frames, and dark plum footer.
 - Do read the final CSS overrides when checking small text sizes.
 - Don't restore the superseded single-screen home policy; preserve working navigation, menu, gallery, and FAQs.
 - Don't restore the removed service summary bar or footer divider without a new request.
+
 
 
 

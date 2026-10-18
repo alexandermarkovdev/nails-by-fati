@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-18T16:07:27.7068218Z",
+  "generatedAt": "2026-10-18T16:17:38.5102241Z",
   "title": "Design System: Nails by Fati Balakchi",
   "extensions": {
     "typographyMeta": {
@@ -18,6 +18,21 @@
         "name": "mobile-menu",
         "value": "0 15px 25px #4928330d",
         "purpose": "Shared mobile navigation panel"
+      },
+      {
+        "name": "floral-photo",
+        "value": "0 20px 45px #733d4b24",
+        "purpose": "Salon arch photograph"
+      },
+      {
+        "name": "gallery-frame",
+        "value": "0 15px 35px #7b405020",
+        "purpose": "Warm tilted gallery frames"
+      },
+      {
+        "name": "airbrush-frame",
+        "value": "0 25px 55px #28111d44",
+        "purpose": "Product frame above plum floral surface"
       }
     ],
     "motion": [
@@ -25,6 +40,11 @@
         "name": "inner-button",
         "value": "background .18s,color .18s",
         "purpose": "Inner action hover; removed by prefers-reduced-motion"
+      },
+      {
+        "name": "gallery-frame-hover",
+        "value": "transform .3s ease,box-shadow .3s ease",
+        "purpose": "Hover lifts gallery frame 8px and straightens rotation; transitions removed for reduced-motion"
       }
     ],
     "breakpoints": [
@@ -92,7 +112,9 @@
     "authority": "User-requested scrolling home supersedes the previous single-screen policy. Selected Elegant Service List opening hero and supplied image preserved; compact Porcelain header is sticky. Separate detail pages retained.",
     "review": {
       "disposition": "ship",
-      "source": "Prior Hero 2 visual review applies to unchanged hero promoted to main; production title only changed."
+      "blockers": 0,
+      "source": "Current independent reviewer of final floral homepage",
+      "captures": ".impeccable/review/polish*"
     },
     "favoriteAlternative": "dist/variant-1/",
     "refinements": {
@@ -314,8 +336,38 @@
       "contact": "Full details, sample placeholder email, and preview-only demo form",
       "homeHeaderContactTarget": "#contact",
       "menu": "site.js closes mobile menu on link click",
-      "continuation": "1300px maximum; insets 50px / 30px at1050 / 24px at700; two-column features stack at700",
+      "continuation": "Final floral-home.css overrides prior plain section treatment: full-width floral surfaces, layered framed imagery, generous responsive section spacing.",
       "body": "Sofia Sans 19px/1.65 desktop;17px/1.6 mobile"
+    },
+    "floralHomepage": {
+      "source": "dist/floral-home.css",
+      "authority": "Final homepage continuation supersedes plain white section treatment; selected hero and header unchanged",
+      "assets": [
+        "dist/design/floral-right.png",
+        "dist/design/floral-left.png",
+        "dist/design/floral-rose.png",
+        "dist/design/floral-bottom.png",
+        "dist/design/floral-corners.png"
+      ],
+      "composition": [
+        "Salon arched photograph and tilted overlapping detail",
+        "Training portrait and certificate collage",
+        "Plum airbrush feature and tilted framed product",
+        "Tilted warm-frame gallery",
+        "Framed Fati portrait",
+        "Floral blog surface and translucent link panel",
+        "Rich floral contact with warm detail and form panels",
+        "Warm dark plum footer"
+      ],
+      "layout": "Full-width art surfaces; max(5vw,calc((100vw - 1160px)/2)) section insets;25px mobile;two columns stack at700px",
+      "display": "clamp(46px,4.5vw,66px)/1.01 desktop;45px mobile",
+      "galleryMobile": "Two columns plus centered third frame",
+      "captures": ".impeccable/review/polish*",
+      "review": {
+        "disposition": "ship",
+        "blockers": 0,
+        "source": "Current independent reviewer"
+      }
     }
   },
   "components": [
@@ -335,16 +387,16 @@
     }
   ],
   "narrative": {
-    "overview": "The user chose a scrolling home. The selected Elegant Service List and supplied image remain in the opening viewport beneath a sticky compact Porcelain header. Below it are salon, training, airbrush, gallery, about, blog, and contact sections plus a full footer. Home contact links target #contact; separate detail pages remain. The prior single-screen home policy is superseded.",
+    "overview": "The selected Elegant Service List opening hero and compact Porcelain header remain unchanged. The scrolling homepage continuation now uses supplied floral artwork as full section surfaces, layered photographs, arched crops, tilted warm frames, a plum airbrush feature, rich contact panels, and a warm dark footer. The final independent review is ship with no blockers.",
     "keyCharacteristics": [
-      "Scrolling home with preserved opening hero",
-      "Sticky compact Porcelain header",
-      "Supplied image confined to first viewport with subtle bottom fade",
-      "Cormorant Garamond display and Sofia Sans continuation body",
-      "Home service sections and contact anchor",
-      "Working navigation and official booking links",
-      "Preview-only demo contact form",
-      "Separate detail routes retained"
+      "Preserved selected hero and compact header",
+      "Full floral homepage section surfaces",
+      "Layered supplied photography and arched crops",
+      "Warm tilted frames and serif captions",
+      "Plum airbrush feature",
+      "Floral blog and rich contact",
+      "Warm dark footer",
+      "Working links and preview-only form"
     ],
     "rules": [],
     "dos": [
@@ -352,14 +404,17 @@
       "Allow home and inner pages to scroll naturally.",
       "Use #contact for home header contact links.",
       "Preserve separate detail pages.",
-      "Keep sample email and preview-only form explicit."
+      "Keep sample email and preview-only form explicit.",
+      "Retain the final floral surfaces and layered supplied imagery.",
+      "Keep hero and header pinned to the selected design."
     ],
     "donts": [
       "Do not restore the superseded single-screen home policy.",
       "Do not send contact form data.",
       "Do not invent dates or prices.",
       "Do not alter supplied image originals.",
-      "Do not treat historical alternatives as current authority."
+      "Do not treat historical alternatives as current authority.",
+      "Do not revert the homepage continuation to plain white sections."
     ]
   }
 }

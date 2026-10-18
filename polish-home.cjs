@@ -1,0 +1,18 @@
+const fs=require('fs');
+let html=fs.readFileSync('dist/index.html','utf8');
+html=html.replace('<section class="home-feature"','<section class="home-feature salon-story"');
+html=html.replace('<img class="" src="/photos/studio24/studio-03.jpg" alt="Интериорът на салона Nails by Fati Balakchi" loading="lazy">','<figure class="salon-composition"><img src="/photos/studio24/studio-03.jpg" alt="Интериорът на салона Nails by Fati Balakchi" loading="lazy"><img class="salon-detail" src="/photos/studio24/studio-04.jpg" alt="Палитрата от цветове в салона" loading="lazy"><figcaption>Вашият цвят. Вашият почерк.</figcaption></figure>');
+html=html.replace('Вашето време<br>в салона.','Вашето време<br><em>за красота.</em>');
+html=html.replace('<p class="feature-note">','<div class="salon-services"><span>Маникюр и педикюр</span><span>Ноктопластика и поддръжка</span><span>Авторски нейл арт</span></div><p class="feature-note">');
+html=html.replace('От първите стъпки<br>до личния почерк.','Изкуство, което<br><em>се предава.</em>');
+html=html.replace('<img class="" src="/photos/airbrush-course/airbrush-08.jpg" alt="Фати Балъкчи демонстрира работа с аерограф" loading="lazy">','<figure class="training-composition"><img src="/photos/airbrush-course/airbrush-08.jpg" alt="Фати Балъкчи демонстрира работа с аерограф" loading="lazy"><figcaption>Техника. Практика. Творческа свобода.</figcaption><img class="training-detail" src="/photos/airbrush-course/airbrush-10.jpg" alt="Участници в обучение със своите сертификати" loading="lazy"></figure>');
+html=html.replace('Инструментите за<br>вашите следващи идеи.','Дайте цвят<br><em>на въображението.</em>');
+html=html.replace('<img class="" src="/photos/airbrush-course/student-results-01.png" alt="Флорални композиции върху учебни мостри" loading="lazy">','<figure class="airbrush-composition"><img src="/photos/airbrush-course/student-results-01.png" alt="Флорални композиции върху учебни мостри" loading="lazy"><figcaption>Аерограф върху учебни мостри</figcaption><span class="color-dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></figure>');
+html=html.replace('Малки детайли.<br>Големи идеи.','Малки платна.<br><em>Безкрайни идеи.</em>');
+const labels=['Флорална фантазия','Контраст и характер','Цвят и нежност'];
+let n=0;html=html.replace(/(<a href="\/galeriya\/" aria-label="Разгледай дизайн [123] в галерията">)(<img[^>]+>)(<\/a>)/g,(_,a,img,end)=>a+img+'<span>'+labels[n++]+'</span>'+end);
+html=html.replace('Запознайте се с Фати.','Зад всеки детайл —<br><em>Фати Балъкчи.</em>');
+html=html.replace('<section class="home-about" aria-labelledby="home-about"><img class="" src="/photos/studio24/studio-05.jpg" alt="Фати Балъкчи в своя салон" loading="lazy">','<section class="home-about" aria-labelledby="home-about"><figure class="fati-portrait"><img src="/photos/studio24/studio-05.jpg" alt="Фати Балъкчи в своя салон" loading="lazy"><figcaption>Fati Balakchi</figcaption></figure>');
+html=html.replace('Още вдъхновение.<br>Още знания.','Вдъхновението<br><em>продължава.</em>');
+html=html.replace('Нека започнем<br>с разговор.','Красивите идеи<br><em>започват с разговор.</em>');
+fs.writeFileSync('dist/index.html',html);
